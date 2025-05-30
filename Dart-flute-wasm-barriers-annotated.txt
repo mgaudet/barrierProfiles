@@ -1,0 +1,385 @@
+Attaching 6 probes...
+Attaching probes for /home/matthew/unified-git/obj-opt-shell-nodebug-x86_64-pc-linux..
+
+Starting JetStream3
+Running Dart-flute-wasm:
+    Startup: 2.655
+    Worst Case: 2.677
+    Average: 2.830
+    Score: 2.719
+    Wall time: 0:26.636
+Dart-flute-wasm
+
+
+First: 2.655
+Worst: 2.677
+Average: 2.830
+
+Total Score:  2.719 
+
+=== BEGIN preBarrier ===
+@preBarrier[]: 57539
+@preBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::preBarrier(js::wasm::AnyRef)+0
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c762191d6 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.GrowableList.add (body) [optimized] (WASM:309)
+    0x3a7c75e4e3cb Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._CupertinoPickerState.build [baseline] (WASM:4052)
+    0x3a7c764b7992 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.StatefulElement.build [optimized] (WASM:1655)
+    0x3a7c76283547 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.ComponentElement.performRebuild [optimized] (WASM:1627)
+    0x3a7c764bd643 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.StatefulElement.performRebuild [optimized] (WASM:1651)
+]: 62118
+@preBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::preBarrier(js::wasm::AnyRef)+0
+    js::wasm::Instance::init(JSContext*, JS::GCVector<JSObject*, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::wasm::Val, 0ul, js::SystemAllocPolicy> const&, JS::Handle<JS::GCVector<js::WasmMemoryObject*, 0ul, js::SystemAllocPolicy> >, JS::GCVector<js::WasmGlobalObject*, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::WasmTagObject*, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<RefPtr<js::wasm::DataSegment const>, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<js::wasm::ModuleElemSegment, 0ul, js::SystemAllocPolicy> const&)+2551
+    js::WasmInstanceObject::create(JSContext*, RefPtr<js::wasm::Code const> const&, mozilla::Vector<RefPtr<js::wasm::DataSegment const>, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<js::wasm::ModuleElemSegment, 0ul, js::SystemAllocPolicy> const&, unsigned int, JS::Handle<JS::GCVector<js::WasmMemoryObject*, 0ul, js::SystemAllocPolicy> >, mozilla::Vector<RefPtr<js::wasm::Table>, 0ul, js::SystemAllocPolicy>&&, JS::GCVector<JSObject*, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<js::wasm::GlobalDesc, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::wasm::Val, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::WasmGlobalObject*, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::WasmTagObject*, 0ul, js::SystemAllocPolicy> const&, JS::Handle<JSObject*>, mozilla::UniquePtr<js::wasm::DebugState, JS::DeletePolicy<js::wasm::DebugState> >)+1046
+    js::wasm::Module::instantiate(JSContext*, js::wasm::ImportValues&, JS::Handle<JSObject*>, JS::MutableHandle<js::WasmInstanceObject*>) const+831
+    AsyncInstantiateTask::resolve(JSContext*, JS::Handle<js::PromiseObject*>)+127
+    js::OffThreadPromiseTask::run(JSContext*, JS::Dispatchable::MaybeShuttingDown)+226
+    js::OffThreadPromiseRuntimeState::internalDrain(JSContext*)+357
+]: 64515
+@preBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::preBarrier(js::wasm::AnyRef)+0
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c7627f537 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.new GrowableList.of [optimized] (WASM:528)
+    0x3a7c75c14dea Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._WidgetsFlutterBinding&BindingBase&GestureBinding&SchedulerBinding.handleDrawFrame [baseline] (WASM:1433)
+    0x3a7c75c148ca Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._WidgetsFlutterBinding&BindingBase&GestureBinding&SchedulerBinding._handleDrawFrame [baseline] (WASM:1431)
+    0x3a7c75c15b33 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.closure wrapper at file:///usr/local/google/home/kustermann/repositories/sdk-gclient4/sdk/wasm_gc_benchmarks/third_party/flute/engine/lib/src/platform_dispatcher.dart:578:21 trampoline [baseline] (WASM:1435)
+    0x3a7c75bffa79 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.closure wrapper at org-dartlang-sdk:///lib/_internal/wasm/lib/timer_patch.dart:94:66 trampoline [baseline] (WASM:988)
+]: 64944
+@preBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::preBarrier(js::wasm::AnyRef)+0
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c7632854f Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.Canvas._addObject [optimized] (WASM:6075)
+    0x3a7c76024e8c Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.Canvas.drawPath [baseline] (WASM:6125)
+    0x3a7c7603141b Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._CheckboxPainter._drawCheck [baseline] (WASM:6178)
+    0x3a7c7602cec5 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._CheckboxPainter.paint [baseline] (WASM:6153)
+    0x3a7c765e52e5 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderCustomPaint.paint [optimized] (WASM:6018)
+]: 68674
+@preBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::preBarrier(js::wasm::AnyRef)+0
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c762191d6 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.GrowableList.add (body) [optimized] (WASM:309)
+    0x3a7c75c57523 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.GrowableList.add (checked entry) [baseline] (WASM:425)
+    0x3a7c75c1338b Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._WidgetsFlutterBinding&BindingBase&GestureBinding&SchedulerBinding.addPostFrameCallback [baseline] (WASM:1427)
+    0x3a7c76056e3b Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._ListWheelScrollViewState.didUpdateWidget (checked entry) [baseline] (WASM:5531)
+    0x3a7c76574379 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.StatefulElement.update (checked entry) [optimized] (WASM:1652)
+]: 80360
+@preBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::preBarrier(js::wasm::AnyRef)+0
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c7645b60f Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderObject.markNeedsLayout [optimized] (WASM:1805)
+    0x3a7c7641ca7f Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderBox.markNeedsLayout [optimized] (WASM:1790)
+    0x3a7c75e7485c Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.ListWheelElement.update (checked entry) [baseline] (WASM:4199)
+    0x3a7c761d81e8 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.Element.updateChild [optimized] (WASM:1481)
+    0x3a7c762c78ac Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.SingleChildRenderObjectElement.update (checked entry) [optimized] (WASM:1773)
+]: 82768
+@preBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::preBarrier(js::wasm::AnyRef)+0
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c7632854f Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.Canvas._addObject [optimized] (WASM:6075)
+    0x3a7c7601f21e Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.Canvas.drawCircle [baseline] (WASM:6086)
+    0x3a7c75fb2907 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RoundSliderThumbShape.paint [baseline] (WASM:6218)
+    0x3a7c760913a3 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._RenderSlider.paint [baseline] (WASM:6007)
+    0x3a7c7622b036 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderObject._paintWithContext [optimized] (WASM:6003)
+]: 95181
+@preBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::preBarrier(js::wasm::AnyRef)+0
+    js::wasm::Instance::arrayCopy(js::wasm::Instance*, void*, unsigned int, void*, unsigned int, unsigned int, unsigned int)+178
+    0x3a7c75b60c64 <not found>
+    0x3a7c75d0cc38 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.new ModifiableFixedLengthList.of [baseline] (WASM:529)
+    0x3a7c764c933e Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._AnimationController&Animation&AnimationEagerListenerMixin&AnimationLocalListenersMixin.notifyListeners [optimized] (WASM:2070)
+    0x3a7c75d7b438 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.AnimationController._tick tear-off trampoline [baseline] (WASM:2164)
+    0x3a7c75d6f2c4 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.Ticker._tick tear-off trampoline [baseline] (WASM:2085)
+]: 97653
+@preBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::preBarrier(js::wasm::AnyRef)+0
+    js::wasm::Instance::arrayCopy(js::wasm::Instance*, void*, unsigned int, void*, unsigned int, unsigned int, unsigned int)+192
+    0x3a7c75b60c64 <not found>
+    0x3a7c75d0cc38 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.new ModifiableFixedLengthList.of [baseline] (WASM:529)
+    0x3a7c764c933e Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._AnimationController&Animation&AnimationEagerListenerMixin&AnimationLocalListenersMixin.notifyListeners [optimized] (WASM:2070)
+    0x3a7c75d7b438 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.AnimationController._tick tear-off trampoline [baseline] (WASM:2164)
+    0x3a7c75d6f2c4 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.Ticker._tick tear-off trampoline [baseline] (WASM:2085)
+]: 121083
+@preBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::preBarrier(js::wasm::AnyRef)+0
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c7622073e Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderObject.markNeedsPaint [optimized] (WASM:1802)
+    0x3a7c76221924 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderObject.markNeedsPaint [optimized] (WASM:1802)
+    0x3a7c76265101 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderBox.layout [optimized] (WASM:6248)
+    0x3a7c76300be4 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._RenderProxyBox&RenderBox&RenderObjectWithChildMixin&RenderProxyBoxMixin.performLayout [optimized] (WASM:6233)
+    0x3a7c76264315 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderBox.layout [optimized] (WASM:6248)
+]: 123325
+@preBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::preBarrier(js::wasm::AnyRef)+0
+    InitExprInterpreter::evalArrayNewFixed(JSContext*, unsigned int, unsigned int)+140
+    InitExprInterpreter::evaluate(JSContext*, js::wasm::Decoder&)+4010
+    js::wasm::InitExpr::decodeAndEvaluate(JSContext*, JS::Handle<js::WasmInstanceObject*>, js::wasm::Decoder&, js::wasm::PackedType<js::wasm::ValTypeTraits>, JS::MutableHandle<js::wasm::Val>)+80
+    js::wasm::InitExpr::evaluate(JSContext*, JS::Handle<js::WasmInstanceObject*>, JS::MutableHandle<js::wasm::Val>) const+158
+    js::wasm::Instance::init(JSContext*, JS::GCVector<JSObject*, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::wasm::Val, 0ul, js::SystemAllocPolicy> const&, JS::Handle<JS::GCVector<js::WasmMemoryObject*, 0ul, js::SystemAllocPolicy> >, JS::GCVector<js::WasmGlobalObject*, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::WasmTagObject*, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<RefPtr<js::wasm::DataSegment const>, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<js::wasm::ModuleElemSegment, 0ul, js::SystemAllocPolicy> const&)+2368
+    js::WasmInstanceObject::create(JSContext*, RefPtr<js::wasm::Code const> const&, mozilla::Vector<RefPtr<js::wasm::DataSegment const>, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<js::wasm::ModuleElemSegment, 0ul, js::SystemAllocPolicy> const&, unsigned int, JS::Handle<JS::GCVector<js::WasmMemoryObject*, 0ul, js::SystemAllocPolicy> >, mozilla::Vector<RefPtr<js::wasm::Table>, 0ul, js::SystemAllocPolicy>&&, JS::GCVector<JSObject*, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<js::wasm::GlobalDesc, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::wasm::Val, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::WasmGlobalObject*, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::WasmTagObject*, 0ul, js::SystemAllocPolicy> const&, JS::Handle<JSObject*>, mozilla::UniquePtr<js::wasm::DebugState, JS::DeletePolicy<js::wasm::DebugState> >)+1046
+]: 129510
+@preBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::preBarrier(js::wasm::AnyRef)+0
+    InitExprInterpreter::evalStructNew(JSContext*, unsigned int)+156
+    InitExprInterpreter::evaluate(JSContext*, js::wasm::Decoder&)+3779
+    js::wasm::InitExpr::decodeAndEvaluate(JSContext*, JS::Handle<js::WasmInstanceObject*>, js::wasm::Decoder&, js::wasm::PackedType<js::wasm::ValTypeTraits>, JS::MutableHandle<js::wasm::Val>)+80
+    js::wasm::InitExpr::evaluate(JSContext*, JS::Handle<js::WasmInstanceObject*>, JS::MutableHandle<js::wasm::Val>) const+158
+    js::wasm::Instance::init(JSContext*, JS::GCVector<JSObject*, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::wasm::Val, 0ul, js::SystemAllocPolicy> const&, JS::Handle<JS::GCVector<js::WasmMemoryObject*, 0ul, js::SystemAllocPolicy> >, JS::GCVector<js::WasmGlobalObject*, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::WasmTagObject*, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<RefPtr<js::wasm::DataSegment const>, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<js::wasm::ModuleElemSegment, 0ul, js::SystemAllocPolicy> const&)+2368
+    js::WasmInstanceObject::create(JSContext*, RefPtr<js::wasm::Code const> const&, mozilla::Vector<RefPtr<js::wasm::DataSegment const>, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<js::wasm::ModuleElemSegment, 0ul, js::SystemAllocPolicy> const&, unsigned int, JS::Handle<JS::GCVector<js::WasmMemoryObject*, 0ul, js::SystemAllocPolicy> >, mozilla::Vector<RefPtr<js::wasm::Table>, 0ul, js::SystemAllocPolicy>&&, JS::GCVector<JSObject*, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<js::wasm::GlobalDesc, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::wasm::Val, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::WasmGlobalObject*, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::WasmTagObject*, 0ul, js::SystemAllocPolicy> const&, JS::Handle<JSObject*>, mozilla::UniquePtr<js::wasm::DebugState, JS::DeletePolicy<js::wasm::DebugState> >)+1046
+]: 147270
+@preBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::preBarrier(js::wasm::AnyRef)+0
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c7649f874 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.GrowableList._grow [optimized] (WASM:321)
+    0x3a7c764f037d Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.PictureLayer.addToScene [optimized] (WASM:6078)
+    0x3a7c7628fab5 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.ContainerLayer.addChildrenToScene [optimized] (WASM:5991)
+    0x3a7c7608ea59 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.OffsetLayer.addToScene [baseline] (WASM:6000)
+    0x3a7c7628fab5 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.ContainerLayer.addChildrenToScene [optimized] (WASM:5991)
+]: 185724
+@preBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::preBarrier(js::wasm::AnyRef)+0
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c7649f874 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.GrowableList._grow [optimized] (WASM:321)
+    0x3a7c764f047d Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.PictureLayer.addToScene [optimized] (WASM:6078)
+    0x3a7c7628fab5 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.ContainerLayer.addChildrenToScene [optimized] (WASM:5991)
+    0x3a7c7608c35f Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.OpacityLayer.addToScene [baseline] (WASM:5980)
+    0x3a7c76529cc6 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.TransformLayer.addToScene [optimized] (WASM:6067)
+]: 207604
+@preBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::preBarrier(js::wasm::AnyRef)+0
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c7632854f Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.Canvas._addObject [optimized] (WASM:6075)
+    0x3a7c76024e67 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.Canvas.drawPath [baseline] (WASM:6125)
+    0x3a7c76098b08 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderPhysicalShape.paint [baseline] (WASM:6023)
+    0x3a7c7622b036 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderObject._paintWithContext [optimized] (WASM:6003)
+    0x3a7c7627af4c Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._RenderLayoutBuilder.paint [optimized] (WASM:6015)
+]: 317230
+@preBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::preBarrier(js::wasm::AnyRef)+0
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c762191d6 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.GrowableList.add (body) [optimized] (WASM:309)
+    0x3a7c75c1c9bd Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.BuildOwner.scheduleBuildFor [baseline] (WASM:1460)
+    0x3a7c764ca80b Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._AnimationController&Animation&AnimationEagerListenerMixin&AnimationLocalListenersMixin.notifyListeners [optimized] (WASM:2070)
+    0x3a7c75d7b438 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.AnimationController._tick tear-off trampoline [baseline] (WASM:2164)
+    0x3a7c75d6f2c4 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.Ticker._tick tear-off trampoline [baseline] (WASM:2085)
+]: 329408
+@preBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::preBarrier(js::wasm::AnyRef)+0
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c76320345 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.SceneBuilder._pushLayer [optimized] (WASM:5993)
+    0x3a7c7608c2bc Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.OpacityLayer.addToScene [baseline] (WASM:5980)
+    0x3a7c76529cc6 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.TransformLayer.addToScene [optimized] (WASM:6067)
+    0x3a7c76594149 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.ClipRectLayer.addToScene [optimized] (WASM:6147)
+    0x3a7c76594149 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.ClipRectLayer.addToScene [optimized] (WASM:6147)
+]: 395190
+@preBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::preBarrier(js::wasm::AnyRef)+0
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c7649f874 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.GrowableList._grow [optimized] (WASM:321)
+    0x3a7c76454380 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderParagraph.paint [optimized] (WASM:6014)
+    0x3a7c7622b036 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderObject._paintWithContext [optimized] (WASM:6003)
+    0x3a7c7630cbe8 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderShiftedBox.paint [optimized] (WASM:6032)
+    0x3a7c7622b036 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderObject._paintWithContext [optimized] (WASM:6003)
+]: 490380
+@preBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::preBarrier(js::wasm::AnyRef)+0
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c7649f874 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.GrowableList._grow [optimized] (WASM:321)
+    0x3a7c76280d52 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.new GrowableList.of [optimized] (WASM:528)
+    0x3a7c76407fe2 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.ScrollNotificationObserverState._notifyListeners [optimized] (WASM:3682)
+    0x3a7c76541108 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._NotificationNode.dispatchNotification [optimized] (WASM:2123)
+    0x3a7c765411d4 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._NotificationNode.dispatchNotification [optimized] (WASM:2123)
+]: 1531050
+=== END preBarrier ===
+=== BEGIN postBarrier ===
+@postBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::postBarrier(js::wasm::AnyRef*, js::wasm::AnyRef, js::wasm::AnyRef)+0
+    js::wasm::Instance::init(JSContext*, JS::GCVector<JSObject*, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::wasm::Val, 0ul, js::SystemAllocPolicy> const&, JS::Handle<JS::GCVector<js::WasmMemoryObject*, 0ul, js::SystemAllocPolicy> >, JS::GCVector<js::WasmGlobalObject*, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::WasmTagObject*, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<RefPtr<js::wasm::DataSegment const>, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<js::wasm::ModuleElemSegment, 0ul, js::SystemAllocPolicy> const&)+2551
+    js::WasmInstanceObject::create(JSContext*, RefPtr<js::wasm::Code const> const&, mozilla::Vector<RefPtr<js::wasm::DataSegment const>, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<js::wasm::ModuleElemSegment, 0ul, js::SystemAllocPolicy> const&, unsigned int, JS::Handle<JS::GCVector<js::WasmMemoryObject*, 0ul, js::SystemAllocPolicy> >, mozilla::Vector<RefPtr<js::wasm::Table>, 0ul, js::SystemAllocPolicy>&&, JS::GCVector<JSObject*, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<js::wasm::GlobalDesc, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::wasm::Val, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::WasmGlobalObject*, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::WasmTagObject*, 0ul, js::SystemAllocPolicy> const&, JS::Handle<JSObject*>, mozilla::UniquePtr<js::wasm::DebugState, JS::DeletePolicy<js::wasm::DebugState> >)+1046
+    js::wasm::Module::instantiate(JSContext*, js::wasm::ImportValues&, JS::Handle<JSObject*>, JS::MutableHandle<js::WasmInstanceObject*>) const+831
+    AsyncInstantiateTask::resolve(JSContext*, JS::Handle<js::PromiseObject*>)+127
+    js::OffThreadPromiseTask::run(JSContext*, JS::Dispatchable::MaybeShuttingDown)+226
+    js::OffThreadPromiseRuntimeState::internalDrain(JSContext*)+357
+]: 64515
+@postBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::postBarrier(js::wasm::AnyRef*, js::wasm::AnyRef, js::wasm::AnyRef)+0
+    WasmArrayRefsMove(js::GCPtr<js::wasm::AnyRef>*, unsigned int, js::wasm::AnyRef*, unsigned int, unsigned int)+155
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c7645b60f Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderObject.markNeedsLayout [optimized] (WASM:1805)
+    0x3a7c7641ca7f Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderBox.markNeedsLayout [optimized] (WASM:1790)
+    0x3a7c75e7485c Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.ListWheelElement.update (checked entry) [baseline] (WASM:4199)
+    0x3a7c761d81e8 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.Element.updateChild [optimized] (WASM:1481)
+]: 67941
+@postBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::postBarrier(js::wasm::AnyRef*, js::wasm::AnyRef, js::wasm::AnyRef)+0
+    WasmArrayRefsMove(js::GCPtr<js::wasm::AnyRef>*, unsigned int, js::wasm::AnyRef*, unsigned int, unsigned int)+155
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c762191d6 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.GrowableList.add (body) [optimized] (WASM:309)
+    0x3a7c75c57523 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.GrowableList.add (checked entry) [baseline] (WASM:425)
+    0x3a7c75c1338b Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._WidgetsFlutterBinding&BindingBase&GestureBinding&SchedulerBinding.addPostFrameCallback [baseline] (WASM:1427)
+    0x3a7c76056e3b Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._ListWheelScrollViewState.didUpdateWidget (checked entry) [baseline] (WASM:5531)
+]: 69971
+@postBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::postBarrier(js::wasm::AnyRef*, js::wasm::AnyRef, js::wasm::AnyRef)+0
+    WasmArrayRefsMove(js::GCPtr<js::wasm::AnyRef>*, unsigned int, js::wasm::AnyRef*, unsigned int, unsigned int)+155
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c7632854f Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.Canvas._addObject [optimized] (WASM:6075)
+    0x3a7c76024e8c Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.Canvas.drawPath [baseline] (WASM:6125)
+    0x3a7c7603141b Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._CheckboxPainter._drawCheck [baseline] (WASM:6178)
+    0x3a7c7602cec5 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._CheckboxPainter.paint [baseline] (WASM:6153)
+]: 72493
+@postBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::postBarrier(js::wasm::AnyRef*, js::wasm::AnyRef, js::wasm::AnyRef)+0
+    WasmArrayRefsMove(js::GCPtr<js::wasm::AnyRef>*, unsigned int, js::wasm::AnyRef*, unsigned int, unsigned int)+155
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c76320345 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.SceneBuilder._pushLayer [optimized] (WASM:5993)
+    0x3a7c7608c2bc Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.OpacityLayer.addToScene [baseline] (WASM:5980)
+    0x3a7c76529cc6 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.TransformLayer.addToScene [optimized] (WASM:6067)
+    0x3a7c76594149 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.ClipRectLayer.addToScene [optimized] (WASM:6147)
+]: 82164
+@postBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::postBarrier(js::wasm::AnyRef*, js::wasm::AnyRef, js::wasm::AnyRef)+0
+    WasmArrayRefsMove(js::GCPtr<js::wasm::AnyRef>*, unsigned int, js::wasm::AnyRef*, unsigned int, unsigned int)+155
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c7632854f Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.Canvas._addObject [optimized] (WASM:6075)
+    0x3a7c7601f21e Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.Canvas.drawCircle [baseline] (WASM:6086)
+    0x3a7c75fb2907 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RoundSliderThumbShape.paint [baseline] (WASM:6218)
+    0x3a7c760913a3 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._RenderSlider.paint [baseline] (WASM:6007)
+]: 95070
+@postBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::postBarrier(js::wasm::AnyRef*, js::wasm::AnyRef, js::wasm::AnyRef)+0
+    js::GCPtr<js::wasm::AnyRef>* std::copy<js::wasm::AnyRef*, js::GCPtr<js::wasm::AnyRef>*>(js::wasm::AnyRef*, js::wasm::AnyRef*, js::GCPtr<js::wasm::AnyRef>*)+73
+    js::wasm::Instance::arrayCopy(js::wasm::Instance*, void*, unsigned int, void*, unsigned int, unsigned int, unsigned int)+178
+    0x3a7c75b60c64 <not found>
+    0x3a7c75d0cc38 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.new ModifiableFixedLengthList.of [baseline] (WASM:529)
+    0x3a7c764c933e Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._AnimationController&Animation&AnimationEagerListenerMixin&AnimationLocalListenersMixin.notifyListeners [optimized] (WASM:2070)
+    0x3a7c75d7b438 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.AnimationController._tick tear-off trampoline [baseline] (WASM:2164)
+]: 97653
+@postBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::postBarrier(js::wasm::AnyRef*, js::wasm::AnyRef, js::wasm::AnyRef)+0
+    WasmArrayRefsMove(js::GCPtr<js::wasm::AnyRef>*, unsigned int, js::wasm::AnyRef*, unsigned int, unsigned int)+155
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c7622073e Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderObject.markNeedsPaint [optimized] (WASM:1802)
+    0x3a7c76221924 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderObject.markNeedsPaint [optimized] (WASM:1802)
+    0x3a7c76265101 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderBox.layout [optimized] (WASM:6248)
+    0x3a7c76300be4 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._RenderProxyBox&RenderBox&RenderObjectWithChildMixin&RenderProxyBoxMixin.performLayout [optimized] (WASM:6233)
+]: 106708
+@postBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::postBarrier(js::wasm::AnyRef*, js::wasm::AnyRef, js::wasm::AnyRef)+0
+    js::GCPtr<js::wasm::AnyRef>* std::copy_backward<js::wasm::AnyRef*, js::GCPtr<js::wasm::AnyRef>*>(js::wasm::AnyRef*, js::wasm::AnyRef*, js::GCPtr<js::wasm::AnyRef>*)+73
+    js::wasm::Instance::arrayCopy(js::wasm::Instance*, void*, unsigned int, void*, unsigned int, unsigned int, unsigned int)+192
+    0x3a7c75b60c64 <not found>
+    0x3a7c75d0cc38 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.new ModifiableFixedLengthList.of [baseline] (WASM:529)
+    0x3a7c764c933e Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._AnimationController&Animation&AnimationEagerListenerMixin&AnimationLocalListenersMixin.notifyListeners [optimized] (WASM:2070)
+    0x3a7c75d7b438 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.AnimationController._tick tear-off trampoline [baseline] (WASM:2164)
+]: 121083
+@postBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::postBarrier(js::wasm::AnyRef*, js::wasm::AnyRef, js::wasm::AnyRef)+0
+    InitExprInterpreter::evalArrayNewFixed(JSContext*, unsigned int, unsigned int)+140
+    InitExprInterpreter::evaluate(JSContext*, js::wasm::Decoder&)+4010
+    js::wasm::InitExpr::decodeAndEvaluate(JSContext*, JS::Handle<js::WasmInstanceObject*>, js::wasm::Decoder&, js::wasm::PackedType<js::wasm::ValTypeTraits>, JS::MutableHandle<js::wasm::Val>)+80
+    js::wasm::InitExpr::evaluate(JSContext*, JS::Handle<js::WasmInstanceObject*>, JS::MutableHandle<js::wasm::Val>) const+158
+    js::wasm::Instance::init(JSContext*, JS::GCVector<JSObject*, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::wasm::Val, 0ul, js::SystemAllocPolicy> const&, JS::Handle<JS::GCVector<js::WasmMemoryObject*, 0ul, js::SystemAllocPolicy> >, JS::GCVector<js::WasmGlobalObject*, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::WasmTagObject*, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<RefPtr<js::wasm::DataSegment const>, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<js::wasm::ModuleElemSegment, 0ul, js::SystemAllocPolicy> const&)+2368
+    js::WasmInstanceObject::create(JSContext*, RefPtr<js::wasm::Code const> const&, mozilla::Vector<RefPtr<js::wasm::DataSegment const>, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<js::wasm::ModuleElemSegment, 0ul, js::SystemAllocPolicy> const&, unsigned int, JS::Handle<JS::GCVector<js::WasmMemoryObject*, 0ul, js::SystemAllocPolicy> >, mozilla::Vector<RefPtr<js::wasm::Table>, 0ul, js::SystemAllocPolicy>&&, JS::GCVector<JSObject*, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<js::wasm::GlobalDesc, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::wasm::Val, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::WasmGlobalObject*, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::WasmTagObject*, 0ul, js::SystemAllocPolicy> const&, JS::Handle<JSObject*>, mozilla::UniquePtr<js::wasm::DebugState, JS::DeletePolicy<js::wasm::DebugState> >)+1046
+]: 129510
+@postBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::postBarrier(js::wasm::AnyRef*, js::wasm::AnyRef, js::wasm::AnyRef)+0
+    WasmArrayRefsMove(js::GCPtr<js::wasm::AnyRef>*, unsigned int, js::wasm::AnyRef*, unsigned int, unsigned int)+73
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c7649f874 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.GrowableList._grow [optimized] (WASM:321)
+    0x3a7c76454380 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderParagraph.paint [optimized] (WASM:6014)
+    0x3a7c7622b036 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderObject._paintWithContext [optimized] (WASM:6003)
+    0x3a7c7630cbe8 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderShiftedBox.paint [optimized] (WASM:6032)
+]: 133203
+@postBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::postBarrier(js::wasm::AnyRef*, js::wasm::AnyRef, js::wasm::AnyRef)+0
+    InitExprInterpreter::evalStructNew(JSContext*, unsigned int)+156
+    InitExprInterpreter::evaluate(JSContext*, js::wasm::Decoder&)+3779
+    js::wasm::InitExpr::decodeAndEvaluate(JSContext*, JS::Handle<js::WasmInstanceObject*>, js::wasm::Decoder&, js::wasm::PackedType<js::wasm::ValTypeTraits>, JS::MutableHandle<js::wasm::Val>)+80
+    js::wasm::InitExpr::evaluate(JSContext*, JS::Handle<js::WasmInstanceObject*>, JS::MutableHandle<js::wasm::Val>) const+158
+    js::wasm::Instance::init(JSContext*, JS::GCVector<JSObject*, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::wasm::Val, 0ul, js::SystemAllocPolicy> const&, JS::Handle<JS::GCVector<js::WasmMemoryObject*, 0ul, js::SystemAllocPolicy> >, JS::GCVector<js::WasmGlobalObject*, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::WasmTagObject*, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<RefPtr<js::wasm::DataSegment const>, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<js::wasm::ModuleElemSegment, 0ul, js::SystemAllocPolicy> const&)+2368
+    js::WasmInstanceObject::create(JSContext*, RefPtr<js::wasm::Code const> const&, mozilla::Vector<RefPtr<js::wasm::DataSegment const>, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<js::wasm::ModuleElemSegment, 0ul, js::SystemAllocPolicy> const&, unsigned int, JS::Handle<JS::GCVector<js::WasmMemoryObject*, 0ul, js::SystemAllocPolicy> >, mozilla::Vector<RefPtr<js::wasm::Table>, 0ul, js::SystemAllocPolicy>&&, JS::GCVector<JSObject*, 0ul, js::SystemAllocPolicy> const&, mozilla::Vector<js::wasm::GlobalDesc, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::wasm::Val, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::WasmGlobalObject*, 0ul, js::SystemAllocPolicy> const&, JS::GCVector<js::WasmTagObject*, 0ul, js::SystemAllocPolicy> const&, JS::Handle<JSObject*>, mozilla::UniquePtr<js::wasm::DebugState, JS::DeletePolicy<js::wasm::DebugState> >)+1046
+]: 147270
+@postBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::postBarrier(js::wasm::AnyRef*, js::wasm::AnyRef, js::wasm::AnyRef)+0
+    WasmArrayRefsMove(js::GCPtr<js::wasm::AnyRef>*, unsigned int, js::wasm::AnyRef*, unsigned int, unsigned int)+155
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c7649f874 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.GrowableList._grow [optimized] (WASM:321)
+    0x3a7c764f047d Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.PictureLayer.addToScene [optimized] (WASM:6078)
+    0x3a7c7628fab5 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.ContainerLayer.addChildrenToScene [optimized] (WASM:5991)
+    0x3a7c7608c35f Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.OpacityLayer.addToScene [baseline] (WASM:5980)
+]: 176706
+@postBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::postBarrier(js::wasm::AnyRef*, js::wasm::AnyRef, js::wasm::AnyRef)+0
+    WasmArrayRefsMove(js::GCPtr<js::wasm::AnyRef>*, unsigned int, js::wasm::AnyRef*, unsigned int, unsigned int)+155
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c7649f874 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.GrowableList._grow [optimized] (WASM:321)
+    0x3a7c764f037d Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.PictureLayer.addToScene [optimized] (WASM:6078)
+    0x3a7c7628fab5 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.ContainerLayer.addChildrenToScene [optimized] (WASM:5991)
+    0x3a7c7608ea59 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.OffsetLayer.addToScene [baseline] (WASM:6000)
+]: 185433
+@postBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::postBarrier(js::wasm::AnyRef*, js::wasm::AnyRef, js::wasm::AnyRef)+0
+    WasmArrayRefsMove(js::GCPtr<js::wasm::AnyRef>*, unsigned int, js::wasm::AnyRef*, unsigned int, unsigned int)+155
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c762191d6 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.GrowableList.add (body) [optimized] (WASM:309)
+    0x3a7c75c1c9bd Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.BuildOwner.scheduleBuildFor [baseline] (WASM:1460)
+    0x3a7c764ca80b Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._AnimationController&Animation&AnimationEagerListenerMixin&AnimationLocalListenersMixin.notifyListeners [optimized] (WASM:2070)
+    0x3a7c75d7b438 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.AnimationController._tick tear-off trampoline [baseline] (WASM:2164)
+]: 308060
+@postBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::postBarrier(js::wasm::AnyRef*, js::wasm::AnyRef, js::wasm::AnyRef)+0
+    WasmArrayRefsMove(js::GCPtr<js::wasm::AnyRef>*, unsigned int, js::wasm::AnyRef*, unsigned int, unsigned int)+73
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c76320345 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.SceneBuilder._pushLayer [optimized] (WASM:5993)
+    0x3a7c7608c2bc Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.OpacityLayer.addToScene [baseline] (WASM:5980)
+    0x3a7c76529cc6 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.TransformLayer.addToScene [optimized] (WASM:6067)
+    0x3a7c76594149 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.ClipRectLayer.addToScene [optimized] (WASM:6147)
+]: 313026
+@postBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::postBarrier(js::wasm::AnyRef*, js::wasm::AnyRef, js::wasm::AnyRef)+0
+    WasmArrayRefsMove(js::GCPtr<js::wasm::AnyRef>*, unsigned int, js::wasm::AnyRef*, unsigned int, unsigned int)+155
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c7632854f Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.Canvas._addObject [optimized] (WASM:6075)
+    0x3a7c76024e67 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.Canvas.drawPath [baseline] (WASM:6125)
+    0x3a7c76098b08 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderPhysicalShape.paint [baseline] (WASM:6023)
+    0x3a7c7622b036 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderObject._paintWithContext [optimized] (WASM:6003)
+]: 317029
+@postBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::postBarrier(js::wasm::AnyRef*, js::wasm::AnyRef, js::wasm::AnyRef)+0
+    WasmArrayRefsMove(js::GCPtr<js::wasm::AnyRef>*, unsigned int, js::wasm::AnyRef*, unsigned int, unsigned int)+73
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c7649f874 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.GrowableList._grow [optimized] (WASM:321)
+    0x3a7c76280d52 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.new GrowableList.of [optimized] (WASM:528)
+    0x3a7c76407fe2 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.ScrollNotificationObserverState._notifyListeners [optimized] (WASM:3682)
+    0x3a7c76541108 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._NotificationNode.dispatchNotification [optimized] (WASM:2123)
+]: 349680
+@postBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::postBarrier(js::wasm::AnyRef*, js::wasm::AnyRef, js::wasm::AnyRef)+0
+    WasmArrayRefsMove(js::GCPtr<js::wasm::AnyRef>*, unsigned int, js::wasm::AnyRef*, unsigned int, unsigned int)+155
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c7649f874 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.GrowableList._grow [optimized] (WASM:321)
+    0x3a7c76454380 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderParagraph.paint [optimized] (WASM:6014)
+    0x3a7c7622b036 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderObject._paintWithContext [optimized] (WASM:6003)
+    0x3a7c7630cbe8 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.RenderShiftedBox.paint [optimized] (WASM:6032)
+]: 357177
+@postBarrier[
+    js::InternalBarrierMethods<js::wasm::AnyRef, void>::postBarrier(js::wasm::AnyRef*, js::wasm::AnyRef, js::wasm::AnyRef)+0
+    WasmArrayRefsMove(js::GCPtr<js::wasm::AnyRef>*, unsigned int, js::wasm::AnyRef*, unsigned int, unsigned int)+155
+    0x3a7c75b5f7a8 <not found>
+    0x3a7c7649f874 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.GrowableList._grow [optimized] (WASM:321)
+    0x3a7c76280d52 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.new GrowableList.of [optimized] (WASM:528)
+    0x3a7c76407fe2 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0.ScrollNotificationObserverState._notifyListeners [optimized] (WASM:3682)
+    0x3a7c76541108 Wasm: /home/matthew/perf/JetStream/Dart/build/flute.dart2wasm.mjs line 16 > WebAssembly.compile: Function module0._NotificationNode.dispatchNotification [optimized] (WASM:2123)
+]: 1181370
+=== END postBarrier ===
+=== BEGIN readBarrier ===
+
+=== END readBarrier ===
+Sleeping for 2 seconds...
+xxxpid=1474462
+
+
+
+
+

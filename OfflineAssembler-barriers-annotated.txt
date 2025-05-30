@@ -1,0 +1,385 @@
+Attaching 6 probes...
+Attaching probes for /home/matthew/unified-git/obj-opt-shell-nodebug-x86_64-pc-linux..
+
+Starting JetStream3
+Running OfflineAssembler:
+    Startup: 2.721
+    Worst Case: 1.755
+    Average: 2.053
+    Score: 2.140
+    Wall time: 3:14.278
+OfflineAssembler
+
+
+First: 2.721
+Worst: 1.755
+Average: 2.053
+
+Total Score:  2.140 
+
+=== BEGIN preBarrier ===
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::CloneRegExpObject(JSContext*, JS::Handle<js::RegExpObject*>)+343
+    0x3985225c4078 VMWrapper: CloneRegExpObject
+    0x3985226f9126 Ion: lex (@evaluate:182:13)
+    0x398522605163 BaselineIC: Call.CallScripted
+    0x3985225cc663 BlinterpOp: Call
+]: 915816
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::CloneRegExpObject(JSContext*, JS::Handle<js::RegExpObject*>)+352
+    0x3985225c4078 VMWrapper: CloneRegExpObject
+    0x3985226f9126 Ion: lex (@evaluate:182:13)
+    0x398522605163 BaselineIC: Call.CallScripted
+    0x3985225cc663 BlinterpOp: Call
+    0x3985226072a0 BaselineInterpreter: Parser (@evaluate:321:16)
+]: 915816
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::RegExpObject::setSource(JSAtom*)+38
+    js::CloneRegExpObject(JSContext*, JS::Handle<js::RegExpObject*>)+309
+    0x3985225c4078 VMWrapper: CloneRegExpObject
+    0x3985226f9126 Ion: lex (@evaluate:182:13)
+    0x398522605163 BaselineIC: Call.CallScripted
+    0x3985225cc663 BlinterpOp: Call
+]: 915816
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::CloneRegExpObject(JSContext*, JS::Handle<js::RegExpObject*>)+391
+    0x3985225c4078 VMWrapper: CloneRegExpObject
+    0x3985226f9126 Ion: lex (@evaluate:182:13)
+    0x398522605163 BaselineIC: Call.CallScripted
+    0x3985225cc663 BlinterpOp: Call
+]: 915816
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::CloneRegExpObject(JSContext*, JS::Handle<js::RegExpObject*>)+298
+    0x3985225c4078 VMWrapper: CloneRegExpObject
+    0x3985226f9126 Ion: lex (@evaluate:182:13)
+    0x398522605163 BaselineIC: Call.CallScripted
+    0x3985225cc663 BlinterpOp: Call
+]: 915816
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::CloneRegExpObject(JSContext*, JS::Handle<js::RegExpObject*>)+343
+    0x3985225c4078 VMWrapper: CloneRegExpObject
+    0x3985226f8cca Ion: lex (@evaluate:182:13)
+    0x398522605163 BaselineIC: Call.CallScripted
+    0x3985225cc663 BlinterpOp: Call
+]: 1071620
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::CloneRegExpObject(JSContext*, JS::Handle<js::RegExpObject*>)+298
+    0x3985225c4078 VMWrapper: CloneRegExpObject
+    0x3985226f8cca Ion: lex (@evaluate:182:13)
+    0x398522605163 BaselineIC: Call.CallScripted
+    0x3985225cc663 BlinterpOp: Call
+]: 1071620
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::CloneRegExpObject(JSContext*, JS::Handle<js::RegExpObject*>)+391
+    0x3985225c4078 VMWrapper: CloneRegExpObject
+    0x3985226f8cca Ion: lex (@evaluate:182:13)
+    0x398522605163 BaselineIC: Call.CallScripted
+    0x3985225cc663 BlinterpOp: Call
+]: 1071620
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::RegExpObject::setSource(JSAtom*)+38
+    js::CloneRegExpObject(JSContext*, JS::Handle<js::RegExpObject*>)+309
+    0x3985225c4078 VMWrapper: CloneRegExpObject
+    0x3985226f8cca Ion: lex (@evaluate:182:13)
+    0x398522605163 BaselineIC: Call.CallScripted
+    0x3985225cc663 BlinterpOp: Call
+]: 1071620
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::CloneRegExpObject(JSContext*, JS::Handle<js::RegExpObject*>)+298
+    0x3985225c4078 VMWrapper: CloneRegExpObject
+    0x3985226f8b66 Ion: lex (@evaluate:182:13)
+    0x398522605163 BaselineIC: Call.CallScripted
+    0x3985225cc663 BlinterpOp: Call
+]: 1071862
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::CloneRegExpObject(JSContext*, JS::Handle<js::RegExpObject*>)+391
+    0x3985225c4078 VMWrapper: CloneRegExpObject
+    0x3985226f8b66 Ion: lex (@evaluate:182:13)
+    0x398522605163 BaselineIC: Call.CallScripted
+    0x3985225cc663 BlinterpOp: Call
+]: 1071862
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::CloneRegExpObject(JSContext*, JS::Handle<js::RegExpObject*>)+343
+    0x3985225c4078 VMWrapper: CloneRegExpObject
+    0x3985226f8b66 Ion: lex (@evaluate:182:13)
+    0x398522605163 BaselineIC: Call.CallScripted
+    0x3985225cc663 BlinterpOp: Call
+]: 1071862
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::RegExpObject::setSource(JSAtom*)+38
+    js::CloneRegExpObject(JSContext*, JS::Handle<js::RegExpObject*>)+309
+    0x3985225c4078 VMWrapper: CloneRegExpObject
+    0x3985226f8b66 Ion: lex (@evaluate:182:13)
+    0x398522605163 BaselineIC: Call.CallScripted
+    0x3985225cc663 BlinterpOp: Call
+]: 1071862
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::CloneRegExpObject(JSContext*, JS::Handle<js::RegExpObject*>)+352
+    0x3985225c4078 VMWrapper: CloneRegExpObject
+    0x3985226f8b66 Ion: lex (@evaluate:182:13)
+    0x398522605163 BaselineIC: Call.CallScripted
+    0x3985225cc663 BlinterpOp: Call
+    0x3985226072a0 BaselineInterpreter: Parser (@evaluate:321:16)
+]: 1071862
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::RegExpObject::setSource(JSAtom*)+38
+    js::CloneRegExpObject(JSContext*, JS::Handle<js::RegExpObject*>)+309
+    0x3985225c4078 VMWrapper: CloneRegExpObject
+    0x3985226f8a0e Ion: lex (@evaluate:182:13)
+    0x398522605163 BaselineIC: Call.CallScripted
+    0x3985225cc663 BlinterpOp: Call
+]: 1084490
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::CloneRegExpObject(JSContext*, JS::Handle<js::RegExpObject*>)+343
+    0x3985225c4078 VMWrapper: CloneRegExpObject
+    0x3985226f8a0e Ion: lex (@evaluate:182:13)
+    0x398522605163 BaselineIC: Call.CallScripted
+    0x3985225cc663 BlinterpOp: Call
+]: 1084490
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::CloneRegExpObject(JSContext*, JS::Handle<js::RegExpObject*>)+352
+    0x3985225c4078 VMWrapper: CloneRegExpObject
+    0x3985226f8a0e Ion: lex (@evaluate:182:13)
+    0x398522605163 BaselineIC: Call.CallScripted
+    0x3985225cc663 BlinterpOp: Call
+    0x3985226072a0 BaselineInterpreter: Parser (@evaluate:321:16)
+]: 1084490
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::CloneRegExpObject(JSContext*, JS::Handle<js::RegExpObject*>)+298
+    0x3985225c4078 VMWrapper: CloneRegExpObject
+    0x3985226f8a0e Ion: lex (@evaluate:182:13)
+    0x398522605163 BaselineIC: Call.CallScripted
+    0x3985225cc663 BlinterpOp: Call
+]: 1084490
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::CloneRegExpObject(JSContext*, JS::Handle<js::RegExpObject*>)+391
+    0x3985225c4078 VMWrapper: CloneRegExpObject
+    0x3985226f8a0e Ion: lex (@evaluate:182:13)
+    0x398522605163 BaselineIC: Call.CallScripted
+    0x3985225cc663 BlinterpOp: Call
+]: 1084490
+@preBarrier[]: 7387592
+=== END preBarrier ===
+=== BEGIN postBarrier ===
+@postBarrier[
+    js::InternalBarrierMethods<JSString*, void>::postBarrier(JSString**, JSString*, JSString*)+0
+    js::RegExpStatics::updateFromMatchPairs(JSContext*, JSLinearString*, js::VectorMatchPairs&)+165
+    ExecuteRegExp(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSString*>, int, js::VectorMatchPairs*)+204
+    js::RegExpBuiltinExecTestFromJit(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JSString*>, bool*)+169
+    0x3985225c7517 VMWrapper: RegExpBuiltinExecTestFromJit
+    0x3985226ab78e Ion: parseExpressionAtom (@evaluate:535:24)
+    0x398522650949 Ion: parseExpressionMul (@evaluate:607:23)
+]: 26299
+@postBarrier[
+    js::InternalBarrierMethods<JSLinearString*, void>::postBarrier(JSLinearString**, JSLinearString*, JSLinearString*)+0
+    js::RegExpStatics::updateFromMatchPairs(JSContext*, JSLinearString*, js::VectorMatchPairs&)+184
+    ExecuteRegExp(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSString*>, int, js::VectorMatchPairs*)+204
+    js::RegExpBuiltinExecTestFromJit(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JSString*>, bool*)+169
+    0x3985225c7517 VMWrapper: RegExpBuiltinExecTestFromJit
+    0x39852266d724 Ion: parseColonColon (@evaluate:489:20)
+    0x3985226a88a1 Ion: parseExpressionAtom (@evaluate:535:24)
+]: 26299
+@postBarrier[
+    js::InternalBarrierMethods<JSString*, void>::postBarrier(JSString**, JSString*, JSString*)+0
+    js::RegExpStatics::updateFromMatchPairs(JSContext*, JSLinearString*, js::VectorMatchPairs&)+165
+    ExecuteRegExp(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSString*>, int, js::VectorMatchPairs*)+204
+    js::RegExpBuiltinExecTestFromJit(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JSString*>, bool*)+169
+    0x3985225c7517 VMWrapper: RegExpBuiltinExecTestFromJit
+    0x39852266d724 Ion: parseColonColon (@evaluate:489:20)
+    0x3985226a88a1 Ion: parseExpressionAtom (@evaluate:535:24)
+]: 26299
+@postBarrier[
+    js::InternalBarrierMethods<JSAtom*, void>::postBarrier(JSAtom**, JSAtom*, JSAtom*)+0
+    js::RegExpStatics::updateFromMatchPairs(JSContext*, JSLinearString*, js::VectorMatchPairs&)+83
+    ExecuteRegExp(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSString*>, int, js::VectorMatchPairs*)+204
+    js::RegExpBuiltinExecTestFromJit(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JSString*>, bool*)+169
+    0x3985225c7517 VMWrapper: RegExpBuiltinExecTestFromJit
+    0x3985226ab78e Ion: parseExpressionAtom (@evaluate:535:24)
+    0x398522650949 Ion: parseExpressionMul (@evaluate:607:23)
+]: 26299
+@postBarrier[
+    js::InternalBarrierMethods<JSAtom*, void>::postBarrier(JSAtom**, JSAtom*, JSAtom*)+0
+    js::RegExpStatics::updateFromMatchPairs(JSContext*, JSLinearString*, js::VectorMatchPairs&)+83
+    ExecuteRegExp(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSString*>, int, js::VectorMatchPairs*)+204
+    js::RegExpBuiltinExecTestFromJit(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JSString*>, bool*)+169
+    0x3985225c7517 VMWrapper: RegExpBuiltinExecTestFromJit
+    0x39852266d724 Ion: parseColonColon (@evaluate:489:20)
+    0x3985226a88a1 Ion: parseExpressionAtom (@evaluate:535:24)
+]: 26299
+@postBarrier[
+    js::InternalBarrierMethods<JSString*, void>::postBarrier(JSString**, JSString*, JSString*)+0
+    js::RegExpStatics::updateFromMatchPairs(JSContext*, JSLinearString*, js::VectorMatchPairs&)+165
+    ExecuteRegExp(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSString*>, int, js::VectorMatchPairs*)+204
+    js::RegExpBuiltinExecTestFromJit(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JSString*>, bool*)+169
+    0x3985225c7517 VMWrapper: RegExpBuiltinExecTestFromJit
+    0x3985226b0268 Ion: parseVariable (@evaluate:425:18)
+    0x3985226cc08c Ion: parseAddress (@evaluate:442:17)
+]: 59887
+@postBarrier[
+    js::InternalBarrierMethods<JSLinearString*, void>::postBarrier(JSLinearString**, JSLinearString*, JSLinearString*)+0
+    js::RegExpStatics::updateFromMatchPairs(JSContext*, JSLinearString*, js::VectorMatchPairs&)+184
+    ExecuteRegExp(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSString*>, int, js::VectorMatchPairs*)+204
+    js::RegExpBuiltinExecTestFromJit(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JSString*>, bool*)+169
+    0x3985225c7517 VMWrapper: RegExpBuiltinExecTestFromJit
+    0x3985226b0268 Ion: parseVariable (@evaluate:425:18)
+    0x3985226cc08c Ion: parseAddress (@evaluate:442:17)
+]: 59887
+@postBarrier[
+    js::InternalBarrierMethods<JSAtom*, void>::postBarrier(JSAtom**, JSAtom*, JSAtom*)+0
+    js::RegExpStatics::updateFromMatchPairs(JSContext*, JSLinearString*, js::VectorMatchPairs&)+83
+    ExecuteRegExp(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSString*>, int, js::VectorMatchPairs*)+204
+    js::RegExpBuiltinExecTestFromJit(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JSString*>, bool*)+169
+    0x3985225c7517 VMWrapper: RegExpBuiltinExecTestFromJit
+    0x3985226b0268 Ion: parseVariable (@evaluate:425:18)
+    0x3985226cc08c Ion: parseAddress (@evaluate:442:17)
+]: 59887
+@postBarrier[
+    js::InternalBarrierMethods<JSString*, void>::postBarrier(JSString**, JSString*, JSString*)+0
+    js::RegExpStatics::updateFromMatchPairs(JSContext*, JSLinearString*, js::VectorMatchPairs&)+165
+    ExecuteRegExp(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSString*>, int, js::VectorMatchPairs*)+204
+    js::RegExpBuiltinExecTestFromJit(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JSString*>, bool*)+169
+    0x3985225c7517 VMWrapper: RegExpBuiltinExecTestFromJit
+    0x3985226b052f Ion: parseVariable (@evaluate:425:18)
+    0x3985226cc08c Ion: parseAddress (@evaluate:442:17)
+]: 59887
+@postBarrier[
+    js::InternalBarrierMethods<JSAtom*, void>::postBarrier(JSAtom**, JSAtom*, JSAtom*)+0
+    js::RegExpStatics::updateFromMatchPairs(JSContext*, JSLinearString*, js::VectorMatchPairs&)+83
+    ExecuteRegExp(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSString*>, int, js::VectorMatchPairs*)+204
+    js::RegExpBuiltinExecTestFromJit(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JSString*>, bool*)+169
+    0x3985225c7517 VMWrapper: RegExpBuiltinExecTestFromJit
+    0x3985226b052f Ion: parseVariable (@evaluate:425:18)
+    0x3985226cc08c Ion: parseAddress (@evaluate:442:17)
+]: 59887
+@postBarrier[
+    js::InternalBarrierMethods<JSLinearString*, void>::postBarrier(JSLinearString**, JSLinearString*, JSLinearString*)+0
+    js::RegExpStatics::updateFromMatchPairs(JSContext*, JSLinearString*, js::VectorMatchPairs&)+184
+    ExecuteRegExp(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSString*>, int, js::VectorMatchPairs*)+204
+    js::RegExpBuiltinExecTestFromJit(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JSString*>, bool*)+169
+    0x3985225c7517 VMWrapper: RegExpBuiltinExecTestFromJit
+    0x3985226b052f Ion: parseVariable (@evaluate:425:18)
+    0x3985226cc08c Ion: parseAddress (@evaluate:442:17)
+]: 59887
+@postBarrier[
+    js::InternalBarrierMethods<JSString*, void>::postBarrier(JSString**, JSString*, JSString*)+0
+    js::RegExpStatics::updateFromMatchPairs(JSContext*, JSLinearString*, js::VectorMatchPairs&)+165
+    ExecuteRegExp(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSString*>, int, js::VectorMatchPairs*)+204
+    js::RegExpBuiltinExecTestFromJit(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JSString*>, bool*)+169
+    0x3985225c7517 VMWrapper: RegExpBuiltinExecTestFromJit
+    0x3985227ea814 Ion: parseExpressionAtom (@evaluate:535:24)
+    0x398522650949 Ion: parseExpressionMul (@evaluate:607:23)
+]: 186171
+@postBarrier[
+    js::InternalBarrierMethods<JSString*, void>::postBarrier(JSString**, JSString*, JSString*)+0
+    js::RegExpStatics::updateFromMatchPairs(JSContext*, JSLinearString*, js::VectorMatchPairs&)+165
+    ExecuteRegExp(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSString*>, int, js::VectorMatchPairs*)+204
+    js::RegExpBuiltinExecTestFromJit(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JSString*>, bool*)+169
+    0x3985225c7517 VMWrapper: RegExpBuiltinExecTestFromJit
+    0x39852266d724 Ion: parseColonColon (@evaluate:489:20)
+    0x3985227e52c1 Ion: parseExpressionAtom (@evaluate:535:24)
+]: 186171
+@postBarrier[
+    js::InternalBarrierMethods<JSLinearString*, void>::postBarrier(JSLinearString**, JSLinearString*, JSLinearString*)+0
+    js::RegExpStatics::updateFromMatchPairs(JSContext*, JSLinearString*, js::VectorMatchPairs&)+184
+    ExecuteRegExp(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSString*>, int, js::VectorMatchPairs*)+204
+    js::RegExpBuiltinExecTestFromJit(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JSString*>, bool*)+169
+    0x3985225c7517 VMWrapper: RegExpBuiltinExecTestFromJit
+    0x39852266d724 Ion: parseColonColon (@evaluate:489:20)
+    0x3985227e52c1 Ion: parseExpressionAtom (@evaluate:535:24)
+]: 186171
+@postBarrier[
+    js::InternalBarrierMethods<JSAtom*, void>::postBarrier(JSAtom**, JSAtom*, JSAtom*)+0
+    js::RegExpStatics::updateFromMatchPairs(JSContext*, JSLinearString*, js::VectorMatchPairs&)+83
+    ExecuteRegExp(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSString*>, int, js::VectorMatchPairs*)+204
+    js::RegExpBuiltinExecTestFromJit(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JSString*>, bool*)+169
+    0x3985225c7517 VMWrapper: RegExpBuiltinExecTestFromJit
+    0x3985227ea814 Ion: parseExpressionAtom (@evaluate:535:24)
+    0x398522650949 Ion: parseExpressionMul (@evaluate:607:23)
+]: 186171
+@postBarrier[
+    js::InternalBarrierMethods<JSAtom*, void>::postBarrier(JSAtom**, JSAtom*, JSAtom*)+0
+    js::RegExpStatics::updateFromMatchPairs(JSContext*, JSLinearString*, js::VectorMatchPairs&)+83
+    ExecuteRegExp(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSString*>, int, js::VectorMatchPairs*)+204
+    js::RegExpBuiltinExecTestFromJit(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JSString*>, bool*)+169
+    0x3985225c7517 VMWrapper: RegExpBuiltinExecTestFromJit
+    0x39852266d724 Ion: parseColonColon (@evaluate:489:20)
+    0x3985227e52c1 Ion: parseExpressionAtom (@evaluate:535:24)
+]: 186171
+@postBarrier[
+    js::InternalBarrierMethods<JSLinearString*, void>::postBarrier(JSLinearString**, JSLinearString*, JSLinearString*)+0
+    js::RegExpStatics::updateFromMatchPairs(JSContext*, JSLinearString*, js::VectorMatchPairs&)+184
+    ExecuteRegExp(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSString*>, int, js::VectorMatchPairs*)+204
+    js::RegExpBuiltinExecTestFromJit(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JSString*>, bool*)+169
+    0x3985225c7517 VMWrapper: RegExpBuiltinExecTestFromJit
+    0x3985227ea814 Ion: parseExpressionAtom (@evaluate:535:24)
+    0x398522650949 Ion: parseExpressionMul (@evaluate:607:23)
+]: 186171
+@postBarrier[
+    js::InternalBarrierMethods<JSLinearString*, void>::postBarrier(JSLinearString**, JSLinearString*, JSLinearString*)+0
+    js::RegExpStatics::updateFromMatchPairs(JSContext*, JSLinearString*, js::VectorMatchPairs&)+184
+    ExecuteRegExp(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSString*>, int, js::VectorMatchPairs*)+204
+    js::RegExpBuiltinExecTestFromJit(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JSString*>, bool*)+169
+    0x3985225c7517 VMWrapper: RegExpBuiltinExecTestFromJit
+    0x3985226a5138 Ion: couldBeExpression (@evaluate:621:22)
+    0x39852266e5cc Ion: parseOperand (@evaluate:671:17)
+]: 213750
+@postBarrier[
+    js::InternalBarrierMethods<JSString*, void>::postBarrier(JSString**, JSString*, JSString*)+0
+    js::RegExpStatics::updateFromMatchPairs(JSContext*, JSLinearString*, js::VectorMatchPairs&)+165
+    ExecuteRegExp(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSString*>, int, js::VectorMatchPairs*)+204
+    js::RegExpBuiltinExecTestFromJit(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JSString*>, bool*)+169
+    0x3985225c7517 VMWrapper: RegExpBuiltinExecTestFromJit
+    0x3985226a5138 Ion: couldBeExpression (@evaluate:621:22)
+    0x39852266e5cc Ion: parseOperand (@evaluate:671:17)
+]: 213750
+@postBarrier[
+    js::InternalBarrierMethods<JSAtom*, void>::postBarrier(JSAtom**, JSAtom*, JSAtom*)+0
+    js::RegExpStatics::updateFromMatchPairs(JSContext*, JSLinearString*, js::VectorMatchPairs&)+83
+    ExecuteRegExp(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSString*>, int, js::VectorMatchPairs*)+204
+    js::RegExpBuiltinExecTestFromJit(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JSString*>, bool*)+169
+    0x3985225c7517 VMWrapper: RegExpBuiltinExecTestFromJit
+    0x3985226a5138 Ion: couldBeExpression (@evaluate:621:22)
+    0x39852266e5cc Ion: parseOperand (@evaluate:671:17)
+]: 213750
+=== END postBarrier ===
+=== BEGIN readBarrier ===
+
+=== END readBarrier ===
+Sleeping for 2 seconds...
+xxxpid=870317
+
+
+
+
+

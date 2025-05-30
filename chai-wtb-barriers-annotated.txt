@@ -1,0 +1,377 @@
+Attaching 6 probes...
+Attaching probes for /home/matthew/unified-git/obj-opt-shell-nodebug-x86_64-pc-linux..
+
+Starting JetStream3
+Running chai-wtb:
+    Startup: 11.121
+    Worst Case: 10.820
+    Average: 12.650
+    Score: 11.503
+    Wall time: 0:02.843
+chai-wtb
+
+
+First: 11.121
+Worst: 10.820
+Average: 12.650
+
+Total Score:  11.503 
+
+=== BEGIN preBarrier ===
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::DateObject::setUTCTime(JS::ClippedTime)+77
+    NewDateObject(JSContext*, JS::CallArgs const&, JS::ClippedTime)+230
+    DateConstructor(JSContext*, unsigned int, JS::Value*)+162
+    0x39fb71810bef BaselineIC: Call.CallNative
+    0x39fb71835a32 Baseline: read (@evaluate:107720:25)
+    0x39fb717ec923 BaselineIC: Call.CallScripted
+]: 531
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::DateObject::setUTCTime(JS::ClippedTime)+116
+    NewDateObject(JSContext*, JS::CallArgs const&, JS::ClippedTime)+230
+    DateConstructor(JSContext*, unsigned int, JS::Value*)+162
+    0x39fb71810bef BaselineIC: Call.CallNative
+    0x39fb71835a32 Baseline: read (@evaluate:107720:25)
+    0x39fb717ec923 BaselineIC: Call.CallScripted
+]: 531
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::DateObject::setUTCTime(JS::ClippedTime)+64
+    NewDateObject(JSContext*, JS::CallArgs const&, JS::ClippedTime)+230
+    DateConstructor(JSContext*, unsigned int, JS::Value*)+162
+    0x39fb71810bef BaselineIC: Call.CallNative
+    0x39fb71835a32 Baseline: read (@evaluate:107720:25)
+    0x39fb717ec923 BaselineIC: Call.CallScripted
+]: 531
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::DateObject::setUTCTime(JS::ClippedTime)+158
+    NewDateObject(JSContext*, JS::CallArgs const&, JS::ClippedTime)+230
+    DateConstructor(JSContext*, unsigned int, JS::Value*)+162
+    0x39fb71810bef BaselineIC: Call.CallNative
+    0x39fb71835a32 Baseline: read (@evaluate:107720:25)
+]: 532
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::ArrayBufferObject::initialize(unsigned long, js::ArrayBufferObject::BufferContents)+78
+    std::tuple<js::ArrayBufferObject*, unsigned char*> js::ArrayBufferObject::createBufferAndData<(js::ArrayBufferObject::FillContents)0>(JSContext*, unsigned long, js::AutoSetNewObjectMetadata&, JS::Handle<JSObject*>)+99
+    js::ArrayBufferObject::createZeroed(JSContext*, unsigned long, JS::Handle<JSObject*>)+68
+    js::TypedArrayObject::ensureHasBuffer(JSContext*, JS::Handle<js::TypedArrayObject*>)+289
+    intrinsic_TypedArrayBuffer(JSContext*, unsigned int, JS::Value*)+77
+]: 679
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::ArrayBufferObject::initialize(unsigned long, js::ArrayBufferObject::BufferContents)+143
+    std::tuple<js::ArrayBufferObject*, unsigned char*> js::ArrayBufferObject::createBufferAndData<(js::ArrayBufferObject::FillContents)0>(JSContext*, unsigned long, js::AutoSetNewObjectMetadata&, JS::Handle<JSObject*>)+99
+    js::ArrayBufferObject::createZeroed(JSContext*, unsigned long, JS::Handle<JSObject*>)+68
+    js::TypedArrayObject::ensureHasBuffer(JSContext*, JS::Handle<js::TypedArrayObject*>)+289
+    intrinsic_TypedArrayBuffer(JSContext*, unsigned int, JS::Value*)+77
+]: 679
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::ArrayBufferObject::initialize(unsigned long, js::ArrayBufferObject::BufferContents)+176
+    std::tuple<js::ArrayBufferObject*, unsigned char*> js::ArrayBufferObject::createBufferAndData<(js::ArrayBufferObject::FillContents)0>(JSContext*, unsigned long, js::AutoSetNewObjectMetadata&, JS::Handle<JSObject*>)+99
+    js::ArrayBufferObject::createZeroed(JSContext*, unsigned long, JS::Handle<JSObject*>)+68
+    js::TypedArrayObject::ensureHasBuffer(JSContext*, JS::Handle<js::TypedArrayObject*>)+289
+    intrinsic_TypedArrayBuffer(JSContext*, unsigned int, JS::Value*)+77
+]: 679
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::ArrayBufferObject::initialize(unsigned long, js::ArrayBufferObject::BufferContents)+109
+    std::tuple<js::ArrayBufferObject*, unsigned char*> js::ArrayBufferObject::createBufferAndData<(js::ArrayBufferObject::FillContents)0>(JSContext*, unsigned long, js::AutoSetNewObjectMetadata&, JS::Handle<JSObject*>)+99
+    js::ArrayBufferObject::createZeroed(JSContext*, unsigned long, JS::Handle<JSObject*>)+68
+    js::TypedArrayObject::ensureHasBuffer(JSContext*, JS::Handle<js::TypedArrayObject*>)+289
+    intrinsic_TypedArrayBuffer(JSContext*, unsigned int, JS::Value*)+77
+]: 679
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::ArrayBufferObject::initialize(unsigned long, js::ArrayBufferObject::BufferContents)+47
+    std::tuple<js::ArrayBufferObject*, unsigned char*> js::ArrayBufferObject::createBufferAndData<(js::ArrayBufferObject::FillContents)0>(JSContext*, unsigned long, js::AutoSetNewObjectMetadata&, JS::Handle<JSObject*>)+99
+    js::ArrayBufferObject::createZeroed(JSContext*, unsigned long, JS::Handle<JSObject*>)+68
+    js::TypedArrayObject::ensureHasBuffer(JSContext*, JS::Handle<js::TypedArrayObject*>)+289
+    intrinsic_TypedArrayBuffer(JSContext*, unsigned int, JS::Value*)+77
+]: 679
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value> >, mozilla::HashMap<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value>, js::StableCellHasher<js::HeapPtr<JS::Value> >, js::TrackedAllocPolicy<(js::TrackingKind)1> >::MapHashPolicy, js::TrackedAllocPolicy<(js::TrackingKind)1> >::changeTableSize(unsigned int, mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value> >, mozilla::HashMap<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value>, js::StableCellHasher<js::HeapPtr<JS::Value> >, js::TrackedAllocPolicy<(js::TrackingKind)1> >::MapHashPolicy, js::TrackedAllocPolicy<(js::TrackingKind)1> >::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<mozilla::HashMapEntry<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value> > >&)#1}::operator()(mozilla::detail::EntrySlot<mozilla::HashMapEntry<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value> > >&) const+356
+    mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value> >, mozilla::HashMap<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value>, js::StableCellHasher<js::HeapPtr<JS::Value> >, js::TrackedAllocPolicy<(js::TrackingKind)1> >::MapHashPolicy, js::TrackedAllocPolicy<(js::TrackingKind)1> >::changeTableSize(unsigned int, mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value> >, mozilla::HashMap<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value>, js::StableCellHasher<js::HeapPtr<JS::Value> >, js::TrackedAllocPolicy<(js::TrackingKind)1> >::MapHashPolicy, js::TrackedAllocPolicy<(js::TrackingKind)1> >::FailureBehavior)+539
+    bool mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value> >, mozilla::HashMap<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value>, js::StableCellHasher<js::HeapPtr<JS::Value> >, js::TrackedAllocPolicy<(js::TrackingKind)1> >::MapHashPolicy, js::TrackedAllocPolicy<(js::TrackingKind)1> >::add<JS::Handle<JS::Value>&, JS::Handle<JS::Value>&>(mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value> >, mozilla::HashMap<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value>, js::StableCellHasher<js::HeapPtr<JS::Value> >, js::TrackedAllocPolicy<(js::TrackingKind)1> >::MapHashPolicy, js::TrackedAllocPolicy<(js::TrackingKind)1> >::AddPtr&, JS::Handle<JS::Value>&, JS::Handle<JS::Value>&)+383
+    bool mozilla::HashMap<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value>, js::StableCellHasher<js::HeapPtr<JS::Value> >, js::TrackedAllocPolicy<(js::TrackingKind)1> >::put<JS::Handle<JS::Value>&, JS::Handle<JS::Value>&>(JS::Value const&, JS::Handle<JS::Value>&, JS::Handle<JS::Value>&)+1054
+    SetWeakMapEntryImpl(JSContext*, JS::Handle<js::WeakMapObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>)+666
+    js::WeakMapObject::set(JSContext*, unsigned int, JS::Value*)+269
+]: 768
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value> >, mozilla::HashMap<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value>, js::StableCellHasher<js::HeapPtr<JS::Value> >, js::TrackedAllocPolicy<(js::TrackingKind)1> >::MapHashPolicy, js::TrackedAllocPolicy<(js::TrackingKind)1> >::changeTableSize(unsigned int, mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value> >, mozilla::HashMap<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value>, js::StableCellHasher<js::HeapPtr<JS::Value> >, js::TrackedAllocPolicy<(js::TrackingKind)1> >::MapHashPolicy, js::TrackedAllocPolicy<(js::TrackingKind)1> >::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<mozilla::HashMapEntry<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value> > >&)#1}::operator()(mozilla::detail::EntrySlot<mozilla::HashMapEntry<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value> > >&) const+383
+    mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value> >, mozilla::HashMap<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value>, js::StableCellHasher<js::HeapPtr<JS::Value> >, js::TrackedAllocPolicy<(js::TrackingKind)1> >::MapHashPolicy, js::TrackedAllocPolicy<(js::TrackingKind)1> >::changeTableSize(unsigned int, mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value> >, mozilla::HashMap<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value>, js::StableCellHasher<js::HeapPtr<JS::Value> >, js::TrackedAllocPolicy<(js::TrackingKind)1> >::MapHashPolicy, js::TrackedAllocPolicy<(js::TrackingKind)1> >::FailureBehavior)+539
+    bool mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value> >, mozilla::HashMap<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value>, js::StableCellHasher<js::HeapPtr<JS::Value> >, js::TrackedAllocPolicy<(js::TrackingKind)1> >::MapHashPolicy, js::TrackedAllocPolicy<(js::TrackingKind)1> >::add<JS::Handle<JS::Value>&, JS::Handle<JS::Value>&>(mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value> >, mozilla::HashMap<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value>, js::StableCellHasher<js::HeapPtr<JS::Value> >, js::TrackedAllocPolicy<(js::TrackingKind)1> >::MapHashPolicy, js::TrackedAllocPolicy<(js::TrackingKind)1> >::AddPtr&, JS::Handle<JS::Value>&, JS::Handle<JS::Value>&)+383
+    bool mozilla::HashMap<js::HeapPtr<JS::Value>, js::HeapPtr<JS::Value>, js::StableCellHasher<js::HeapPtr<JS::Value> >, js::TrackedAllocPolicy<(js::TrackingKind)1> >::put<JS::Handle<JS::Value>&, JS::Handle<JS::Value>&>(JS::Value const&, JS::Handle<JS::Value>&, JS::Handle<JS::Value>&)+1054
+    SetWeakMapEntryImpl(JSContext*, JS::Handle<js::WeakMapObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>)+666
+    js::WeakMapObject::set(JSContext*, unsigned int, JS::Value*)+269
+]: 768
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::frontend::CompilationStencil::instantiateStencilAfterPreparation(JSContext*, js::frontend::CompilationInput&, js::frontend::CompilationStencil const&, js::frontend::CompilationGCOutput&)+2970
+    js::frontend::CompilationStencil::instantiateStencils(JSContext*, js::frontend::CompilationInput&, js::frontend::CompilationStencil const&, js::frontend::CompilationGCOutput&)+179
+    InstantiateLazyFunction(JSContext*, js::frontend::CompilationInput&, js::frontend::CompilationStencil const&)+139
+    bool CompileLazyFunctionToStencilMaybeInstantiate<char16_t>(JSContext*, js::FrontendContext*, js::LifoAlloc&, js::frontend::CompilationInput&, js::frontend::ScopeBindingCache*, char16_t const*, unsigned long, js::frontend::InitialStencilAndDelazifications*, js::frontend::CompilationStencil const**)+2119
+    js::frontend::DelazifyCanonicalScriptedFunction(JSContext*, js::FrontendContext*, JS::Handle<JSFunction*>)+1801
+]: 1439
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setDenseElementUnchecked(unsigned int, JS::Value const&)+54
+    js::AddOrUpdateSparseElementHelper(JSContext*, JS::Handle<js::NativeObject*>, int, JS::Handle<JS::Value>, bool)+764
+    0x39fb717cae64 VMWrapper: AddOrUpdateSparseElementHelper
+    0x39fb71846243 BaselineIC: SetProp.AddOrUpdateSparseElement
+    0x39fb7184651e Baseline: o (@evaluate:140077:15)
+    0x39fb717ca2d5 Trampoline: Arguments Rectifier
+]: 1465
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    NativeSetExistingDataProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyInfoBase<unsigned int>, JS::Handle<JS::Value>, JS::ObjectOpResult&)+383
+    bool js::NativeSetProperty<(js::QualifiedBool)1>(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, JS::ObjectOpResult&)+2900
+    js::SetObjectElementWithReceiver(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+386
+    bool js::jit::SetElementMegamorphic<false>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+297
+    0x39fb717cf717 VMWrapper: SetElementMegamorphicNoCache
+    0x39fb717f7060 BaselineIC: SetProp.MegamorphicSetElement
+]: 1675
+@preBarrier[
+    js::InternalBarrierMethods<js::jit::JitCode*, void>::preBarrier(js::jit::JitCode*)+0
+    js::RunScript(JSContext*, js::RunState&)+922
+    js::InternalCallOrConstruct(JSContext*, JS::CallArgs const&, js::MaybeConstruct, js::CallReason)+1199
+    js::Call(JSContext*, JS::Handle<JS::Value>, JS::Handle<JS::Value>, js::AnyInvokeArgs const&, JS::MutableHandle<JS::Value>, js::CallReason)+246
+    js::jit::InvokeFunction(JSContext*, JS::Handle<JSObject*>, bool, bool, unsigned int, JS::Value*, JS::MutableHandle<JS::Value>)+1137
+    js::jit::InvokeFromInterpreterStub(JSContext*, js::jit::InterpreterStubExitFrameLayout*)+180
+    0x39fb717cad75 Trampoline: Interpreter
+]: 1753
+@preBarrier[
+    js::InternalBarrierMethods<js::jit::JitCode*, void>::preBarrier(js::jit::JitCode*)+0
+    js::RunScript(JSContext*, js::RunState&)+997
+    js::InternalCallOrConstruct(JSContext*, JS::CallArgs const&, js::MaybeConstruct, js::CallReason)+1199
+    js::Call(JSContext*, JS::Handle<JS::Value>, JS::Handle<JS::Value>, js::AnyInvokeArgs const&, JS::MutableHandle<JS::Value>, js::CallReason)+246
+    js::jit::InvokeFunction(JSContext*, JS::Handle<JSObject*>, bool, bool, unsigned int, JS::Value*, JS::MutableHandle<JS::Value>)+1137
+    js::jit::InvokeFromInterpreterStub(JSContext*, js::jit::InterpreterStubExitFrameLayout*)+180
+    0x39fb717cad75 Trampoline: Interpreter
+]: 1753
+@preBarrier[
+    js::InternalBarrierMethods<js::jit::JitCode*, void>::preBarrier(js::jit::JitCode*)+0
+    mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline>, mozilla::HashMap<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline, mozilla::DefaultHasher<js::HeapPtr<js::BaseScript*>, void>, js::SystemAllocPolicy>::MapHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline>, mozilla::HashMap<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline, mozilla::DefaultHasher<js::HeapPtr<js::BaseScript*>, void>, js::SystemAllocPolicy>::MapHashPolicy, js::SystemAllocPolicy>::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<mozilla::HashMapEntry<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline> >&)#1}::operator()(mozilla::detail::EntrySlot<mozilla::HashMapEntry<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline> >&) const+305
+    mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline>, mozilla::HashMap<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline, mozilla::DefaultHasher<js::HeapPtr<js::BaseScript*>, void>, js::SystemAllocPolicy>::MapHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline>, mozilla::HashMap<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline, mozilla::DefaultHasher<js::HeapPtr<js::BaseScript*>, void>, js::SystemAllocPolicy>::MapHashPolicy, js::SystemAllocPolicy>::FailureBehavior)+443
+    bool mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline>, mozilla::HashMap<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline, mozilla::DefaultHasher<js::HeapPtr<js::BaseScript*>, void>, js::SystemAllocPolicy>::MapHashPolicy, js::SystemAllocPolicy>::add<JSScript*&, js::jit::EntryTrampoline&>(mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline>, mozilla::HashMap<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline, mozilla::DefaultHasher<js::HeapPtr<js::BaseScript*>, void>, js::SystemAllocPolicy>::MapHashPolicy, js::SystemAllocPolicy>::AddPtr&, JSScript*&, js::jit::EntryTrampoline&)+367
+    bool mozilla::HashMap<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline, mozilla::DefaultHasher<js::HeapPtr<js::BaseScript*>, void>, js::SystemAllocPolicy>::put<JSScript*&, js::jit::EntryTrampoline&>(js::BaseScript* const&, JSScript*&, js::jit::EntryTrampoline&)+468
+    js::RunScript(JSContext*, js::RunState&)+976
+    js::InternalCallOrConstruct(JSContext*, JS::CallArgs const&, js::MaybeConstruct, js::CallReason)+1199
+]: 2494
+@preBarrier[
+    js::InternalBarrierMethods<js::BaseScript*, void>::preBarrier(js::BaseScript*)+0
+    mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline>, mozilla::HashMap<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline, mozilla::DefaultHasher<js::HeapPtr<js::BaseScript*>, void>, js::SystemAllocPolicy>::MapHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline>, mozilla::HashMap<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline, mozilla::DefaultHasher<js::HeapPtr<js::BaseScript*>, void>, js::SystemAllocPolicy>::MapHashPolicy, js::SystemAllocPolicy>::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<mozilla::HashMapEntry<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline> >&)#1}::operator()(mozilla::detail::EntrySlot<mozilla::HashMapEntry<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline> >&) const+327
+    mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline>, mozilla::HashMap<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline, mozilla::DefaultHasher<js::HeapPtr<js::BaseScript*>, void>, js::SystemAllocPolicy>::MapHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline>, mozilla::HashMap<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline, mozilla::DefaultHasher<js::HeapPtr<js::BaseScript*>, void>, js::SystemAllocPolicy>::MapHashPolicy, js::SystemAllocPolicy>::FailureBehavior)+443
+    bool mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline>, mozilla::HashMap<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline, mozilla::DefaultHasher<js::HeapPtr<js::BaseScript*>, void>, js::SystemAllocPolicy>::MapHashPolicy, js::SystemAllocPolicy>::add<JSScript*&, js::jit::EntryTrampoline&>(mozilla::detail::HashTable<mozilla::HashMapEntry<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline>, mozilla::HashMap<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline, mozilla::DefaultHasher<js::HeapPtr<js::BaseScript*>, void>, js::SystemAllocPolicy>::MapHashPolicy, js::SystemAllocPolicy>::AddPtr&, JSScript*&, js::jit::EntryTrampoline&)+367
+    bool mozilla::HashMap<js::HeapPtr<js::BaseScript*>, js::jit::EntryTrampoline, mozilla::DefaultHasher<js::HeapPtr<js::BaseScript*>, void>, js::SystemAllocPolicy>::put<JSScript*&, js::jit::EntryTrampoline&>(js::BaseScript* const&, JSScript*&, js::jit::EntryTrampoline&)+468
+    js::RunScript(JSContext*, js::RunState&)+976
+    js::InternalCallOrConstruct(JSContext*, JS::CallArgs const&, js::MaybeConstruct, js::CallReason)+1199
+]: 2494
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setDenseElementUnchecked(unsigned int, JS::Value const&)+54
+    js::AddOrUpdateSparseElementHelper(JSContext*, JS::Handle<js::NativeObject*>, int, JS::Handle<JS::Value>, bool)+764
+    0x39fb717cae64 VMWrapper: AddOrUpdateSparseElementHelper
+    0x39fb718468d2 Ion: o (@evaluate:140077:15)
+    0x39fb717ca2d5 Trampoline: Arguments Rectifier
+    0x39fb717ca4e6 Trampoline: EnterJIT
+]: 6236
+@preBarrier[]: 98520
+=== END preBarrier ===
+=== BEGIN postBarrier ===
+@postBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::postBarrier(js::PropMap**, js::PropMap*, js::PropMap*)+0
+    js::SharedShape::getPropMapShape(JSContext*, js::BaseShape*, unsigned long, JS::Handle<js::SharedPropMap*>, unsigned int, js::EnumFlags<js::ObjectFlag>, bool*)+371
+    js::Shape::replaceShape(JSContext*, JS::Handle<JSObject*>, js::EnumFlags<js::ObjectFlag>, js::TaggedProto, unsigned int)+575
+    JSObject::setProtoUnchecked(JSContext*, JS::Handle<JSObject*>, JS::Handle<js::TaggedProto>)+278
+    js::SetPrototype(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSObject*>, JS::ObjectOpResult&)+468
+    js::SetPrototype(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSObject*>)+47
+    obj_setPrototypeOf(JSContext*, unsigned int, JS::Value*)+311
+]: 5473
+@postBarrier[
+    js::InternalBarrierMethods<js::TaggedProto, void>::postBarrier(js::TaggedProto*, js::TaggedProto, js::TaggedProto)+0
+    js::BaseShape::get(JSContext*, JSClass const*, JS::Realm*, JS::Handle<js::TaggedProto>)+260
+    js::Shape::replaceShape(JSContext*, JS::Handle<JSObject*>, js::EnumFlags<js::ObjectFlag>, js::TaggedProto, unsigned int)+478
+    JSObject::setProtoUnchecked(JSContext*, JS::Handle<JSObject*>, JS::Handle<js::TaggedProto>)+278
+    js::SetPrototype(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSObject*>, JS::ObjectOpResult&)+468
+    js::SetPrototype(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSObject*>)+47
+    obj_setPrototypeOf(JSContext*, unsigned int, JS::Value*)+311
+]: 5473
+@postBarrier[
+    js::InternalBarrierMethods<js::BaseShape*, void>::postBarrier(js::BaseShape**, js::BaseShape*, js::BaseShape*)+0
+    bool mozilla::detail::HashTable<js::WeakHeapPtr<js::BaseShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::BaseShape*>, js::BaseShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::add<js::BaseShape* const&>(mozilla::detail::HashTable<js::WeakHeapPtr<js::BaseShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::BaseShape*>, js::BaseShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::AddPtr&, js::BaseShape* const&)+833
+    js::BaseShape::get(JSContext*, JSClass const*, JS::Realm*, JS::Handle<js::TaggedProto>)+391
+    js::Shape::replaceShape(JSContext*, JS::Handle<JSObject*>, js::EnumFlags<js::ObjectFlag>, js::TaggedProto, unsigned int)+478
+    JSObject::setProtoUnchecked(JSContext*, JS::Handle<JSObject*>, JS::Handle<js::TaggedProto>)+278
+    js::SetPrototype(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSObject*>, JS::ObjectOpResult&)+468
+    js::SetPrototype(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSObject*>)+47
+]: 5487
+@postBarrier[
+    js::InternalBarrierMethods<js::SharedShape*, void>::postBarrier(js::SharedShape**, js::SharedShape*, js::SharedShape*)+0
+    bool mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::add<JS::Rooted<js::SharedShape*> const&>(mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::AddPtr&, JS::Rooted<js::SharedShape*> const&)+834
+    js::SharedShape::getPropMapShape(JSContext*, js::BaseShape*, unsigned long, JS::Handle<js::SharedPropMap*>, unsigned int, js::EnumFlags<js::ObjectFlag>, bool*)+661
+    js::Shape::replaceShape(JSContext*, JS::Handle<JSObject*>, js::EnumFlags<js::ObjectFlag>, js::TaggedProto, unsigned int)+575
+    JSObject::setProtoUnchecked(JSContext*, JS::Handle<JSObject*>, JS::Handle<js::TaggedProto>)+278
+    js::SetPrototype(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSObject*>, JS::ObjectOpResult&)+468
+    js::SetPrototype(JSContext*, JS::Handle<JSObject*>, JS::Handle<JSObject*>)+47
+]: 5489
+@postBarrier[
+    js::InternalBarrierMethods<js::SharedShape*, void>::postBarrier(js::SharedShape**, js::SharedShape*, js::SharedShape*)+0
+    void mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::forEachSlot<mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<js::WeakHeapPtr<js::SharedShape*> const>&)#1}>(char*, unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<js::WeakHeapPtr<js::SharedShape*> const>&)#1}&&)+290
+    mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::rehashIfOverloaded(mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)+642
+    bool mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::add<JS::Rooted<js::SharedShape*> const&>(mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::AddPtr&, JS::Rooted<js::SharedShape*> const&)+271
+    js::SharedShape::getInitialShape(JSContext*, JSClass const*, JS::Realm*, js::TaggedProto, unsigned long, js::EnumFlags<js::ObjectFlag>)+1076
+    js::NewPlainObjectWithProtoAndAllocKind(JSContext*, JS::Handle<JSObject*>, js::gc::AllocKind, js::NewObjectKind)+134
+    js::obj_create(JSContext*, unsigned int, JS::Value*)+150
+]: 5808
+@postBarrier[
+    js::InternalBarrierMethods<js::SharedShape*, void>::postBarrier(js::SharedShape**, js::SharedShape*, js::SharedShape*)+0
+    void mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::forEachSlot<mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<js::WeakHeapPtr<js::SharedShape*> const>&)#1}>(char*, unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<js::WeakHeapPtr<js::SharedShape*> const>&)#1}&&)+307
+    mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::rehashIfOverloaded(mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)+642
+    bool mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::add<JS::Rooted<js::SharedShape*> const&>(mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::AddPtr&, JS::Rooted<js::SharedShape*> const&)+271
+    js::SharedShape::getInitialShape(JSContext*, JSClass const*, JS::Realm*, js::TaggedProto, unsigned long, js::EnumFlags<js::ObjectFlag>)+1076
+    js::NewPlainObjectWithProtoAndAllocKind(JSContext*, JS::Handle<JSObject*>, js::gc::AllocKind, js::NewObjectKind)+134
+    js::obj_create(JSContext*, unsigned int, JS::Value*)+150
+]: 5808
+@postBarrier[
+    js::InternalBarrierMethods<js::SharedShape*, void>::postBarrier(js::SharedShape**, js::SharedShape*, js::SharedShape*)+0
+    void mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::forEachSlot<mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<js::WeakHeapPtr<js::SharedShape*> const>&)#1}>(char*, unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<js::WeakHeapPtr<js::SharedShape*> const>&)#1}&&)+334
+    mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::rehashIfOverloaded(mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)+642
+    bool mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::add<JS::Rooted<js::SharedShape*> const&>(mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::InitialShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::AddPtr&, JS::Rooted<js::SharedShape*> const&)+271
+    js::SharedShape::getInitialShape(JSContext*, JSClass const*, JS::Realm*, js::TaggedProto, unsigned long, js::EnumFlags<js::ObjectFlag>)+1076
+    js::NewPlainObjectWithProtoAndAllocKind(JSContext*, JS::Handle<JSObject*>, js::gc::AllocKind, js::NewObjectKind)+134
+    js::obj_create(JSContext*, unsigned int, JS::Value*)+150
+]: 5808
+@postBarrier[
+    0x5e2cdd7289f0 <not found>
+    0x5e2cdd72eaa8 <not found>
+    0x5e2cddabfce8 <not found>
+    0x5e2cddad3624 <not found>
+    0x5e2cdda82ce7 <not found>
+    0x5e2cdda82ea9 <not found>
+    0x5e2cdd61450b <not found>
+]: 5958
+@postBarrier[
+    js::InternalBarrierMethods<JSAtom*, void>::postBarrier(JSAtom**, JSAtom*, JSAtom*)+0
+    bool mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::add<JSAtom*&>(mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::AddPtr&, JSAtom*&)+833
+    JSAtom* js::AtomizeCharsNonStaticValidLength<unsigned char>(JSContext*, unsigned int, unsigned char const*, unsigned long)+4544
+    js::frontend::InstantiateMarkedAtoms(JSContext*, js::FrontendContext*, mozilla::Span<js::frontend::ParserAtom*, 18446744073709551615ul> const&, js::frontend::CompilationAtomCache&)+155
+    js::frontend::CompilationStencil::instantiateStencilAfterPreparation(JSContext*, js::frontend::CompilationInput&, js::frontend::CompilationStencil const&, js::frontend::CompilationGCOutput&)+204
+    js::frontend::CompilationStencil::instantiateStencils(JSContext*, js::frontend::CompilationInput&, js::frontend::CompilationStencil const&, js::frontend::CompilationGCOutput&)+179
+    js::frontend::InitialStencilAndDelazifications::instantiateStencils(JSContext*, js::frontend::CompilationInput&, js::frontend::InitialStencilAndDelazifications&, js::frontend::CompilationGCOutput&)+53
+]: 11844
+@postBarrier[
+    js::InternalBarrierMethods<js::SharedShape*, void>::postBarrier(js::SharedShape**, js::SharedShape*, js::SharedShape*)+0
+    void mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::forEachSlot<mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<js::WeakHeapPtr<js::SharedShape*> const>&)#1}>(char*, unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<js::WeakHeapPtr<js::SharedShape*> const>&)#1}&&)+307
+    mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::rehashIfOverloaded(mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)+642
+    bool mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::add<JS::Rooted<js::SharedShape*> const&>(mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::AddPtr&, JS::Rooted<js::SharedShape*> const&)+271
+    js::SharedShape::getPropMapShape(JSContext*, js::BaseShape*, unsigned long, JS::Handle<js::SharedPropMap*>, unsigned int, js::EnumFlags<js::ObjectFlag>, bool*)+661
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+1262
+    bool js::jit::TryAddOrSetPlainObjectProperty<false>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2199
+]: 12288
+@postBarrier[
+    js::InternalBarrierMethods<js::SharedShape*, void>::postBarrier(js::SharedShape**, js::SharedShape*, js::SharedShape*)+0
+    void mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::forEachSlot<mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<js::WeakHeapPtr<js::SharedShape*> const>&)#1}>(char*, unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<js::WeakHeapPtr<js::SharedShape*> const>&)#1}&&)+290
+    mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::rehashIfOverloaded(mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)+642
+    bool mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::add<JS::Rooted<js::SharedShape*> const&>(mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::AddPtr&, JS::Rooted<js::SharedShape*> const&)+271
+    js::SharedShape::getPropMapShape(JSContext*, js::BaseShape*, unsigned long, JS::Handle<js::SharedPropMap*>, unsigned int, js::EnumFlags<js::ObjectFlag>, bool*)+661
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+1262
+    bool js::jit::TryAddOrSetPlainObjectProperty<false>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2199
+]: 12288
+@postBarrier[
+    js::InternalBarrierMethods<js::SharedShape*, void>::postBarrier(js::SharedShape**, js::SharedShape*, js::SharedShape*)+0
+    void mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::forEachSlot<mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<js::WeakHeapPtr<js::SharedShape*> const>&)#1}>(char*, unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<js::WeakHeapPtr<js::SharedShape*> const>&)#1}&&)+334
+    mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::rehashIfOverloaded(mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)+642
+    bool mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::add<JS::Rooted<js::SharedShape*> const&>(mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::AddPtr&, JS::Rooted<js::SharedShape*> const&)+271
+    js::SharedShape::getPropMapShape(JSContext*, js::BaseShape*, unsigned long, JS::Handle<js::SharedPropMap*>, unsigned int, js::EnumFlags<js::ObjectFlag>, bool*)+661
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+1262
+    bool js::jit::TryAddOrSetPlainObjectProperty<false>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2199
+]: 12288
+@postBarrier[
+    0x5e2cdd580bf0 <not found>
+    0x5e2cdd7307a4 <not found>
+    0x5e2cddabfce8 <not found>
+    0x5e2cddad3624 <not found>
+    0x5e2cdda82ce7 <not found>
+    0x5e2cdda82ea9 <not found>
+    0x5e2cdd61450b <not found>
+]: 14536
+@postBarrier[
+    js::InternalBarrierMethods<js::ScriptSourceObject*, void>::postBarrier(js::ScriptSourceObject**, js::ScriptSourceObject*, js::ScriptSourceObject*)+0
+    js::BaseScript::CreateRawLazy(JSContext*, unsigned int, JS::Handle<JSFunction*>, JS::Handle<js::ScriptSourceObject*>, js::SourceExtent const&, unsigned int)+247
+    js::frontend::CompilationStencil::instantiateStencilAfterPreparation(JSContext*, js::frontend::CompilationInput&, js::frontend::CompilationStencil const&, js::frontend::CompilationGCOutput&)+1890
+    js::frontend::CompilationStencil::instantiateStencils(JSContext*, js::frontend::CompilationInput&, js::frontend::CompilationStencil const&, js::frontend::CompilationGCOutput&)+179
+    js::frontend::InitialStencilAndDelazifications::instantiateStencils(JSContext*, js::frontend::CompilationInput&, js::frontend::InitialStencilAndDelazifications&, js::frontend::CompilationGCOutput&)+53
+    bool InstantiateStencilsImpl<js::frontend::InitialStencilAndDelazifications>(JSContext*, js::frontend::CompilationInput&, js::frontend::InitialStencilAndDelazifications&, js::frontend::CompilationGCOutput&)+79
+    JS::InstantiateGlobalStencil(JSContext*, JS::InstantiateOptions const&, js::frontend::InitialStencilAndDelazifications*, JS::InstantiationStorage*)+482
+]: 14920
+@postBarrier[
+    js::InternalBarrierMethods<JSFunction*, void>::postBarrier(JSFunction**, JSFunction*, JSFunction*)+0
+    js::BaseScript::CreateRawLazy(JSContext*, unsigned int, JS::Handle<JSFunction*>, JS::Handle<js::ScriptSourceObject*>, js::SourceExtent const&, unsigned int)+225
+    js::frontend::CompilationStencil::instantiateStencilAfterPreparation(JSContext*, js::frontend::CompilationInput&, js::frontend::CompilationStencil const&, js::frontend::CompilationGCOutput&)+1890
+    js::frontend::CompilationStencil::instantiateStencils(JSContext*, js::frontend::CompilationInput&, js::frontend::CompilationStencil const&, js::frontend::CompilationGCOutput&)+179
+    js::frontend::InitialStencilAndDelazifications::instantiateStencils(JSContext*, js::frontend::CompilationInput&, js::frontend::InitialStencilAndDelazifications&, js::frontend::CompilationGCOutput&)+53
+    bool InstantiateStencilsImpl<js::frontend::InitialStencilAndDelazifications>(JSContext*, js::frontend::CompilationInput&, js::frontend::InitialStencilAndDelazifications&, js::frontend::CompilationGCOutput&)+79
+    JS::InstantiateGlobalStencil(JSContext*, JS::InstantiateOptions const&, js::frontend::InitialStencilAndDelazifications*, JS::InstantiationStorage*)+482
+]: 14920
+@postBarrier[
+    js::InternalBarrierMethods<JSAtom*, void>::postBarrier(JSAtom**, JSAtom*, JSAtom*)+0
+    void mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::forEachSlot<mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<js::WeakHeapPtr<JSAtom*> const>&)#1}>(char*, unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<js::WeakHeapPtr<JSAtom*> const>&)#1}&&)+307
+    mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::rehashIfOverloaded(mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)+642
+    bool mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::add<JSAtom*&>(mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::AddPtr&, JSAtom*&)+271
+    JSAtom* js::AtomizeCharsNonStaticValidLength<unsigned char>(JSContext*, unsigned int, unsigned char const*, unsigned long)+4544
+    js::frontend::InstantiateMarkedAtoms(JSContext*, js::FrontendContext*, mozilla::Span<js::frontend::ParserAtom*, 18446744073709551615ul> const&, js::frontend::CompilationAtomCache&)+155
+    js::frontend::CompilationStencil::instantiateStencilAfterPreparation(JSContext*, js::frontend::CompilationInput&, js::frontend::CompilationStencil const&, js::frontend::CompilationGCOutput&)+204
+]: 21504
+@postBarrier[
+    js::InternalBarrierMethods<JSAtom*, void>::postBarrier(JSAtom**, JSAtom*, JSAtom*)+0
+    void mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::forEachSlot<mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<js::WeakHeapPtr<JSAtom*> const>&)#1}>(char*, unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<js::WeakHeapPtr<JSAtom*> const>&)#1}&&)+290
+    mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::rehashIfOverloaded(mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)+642
+    bool mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::add<JSAtom*&>(mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::AddPtr&, JSAtom*&)+271
+    JSAtom* js::AtomizeCharsNonStaticValidLength<unsigned char>(JSContext*, unsigned int, unsigned char const*, unsigned long)+4544
+    js::frontend::InstantiateMarkedAtoms(JSContext*, js::FrontendContext*, mozilla::Span<js::frontend::ParserAtom*, 18446744073709551615ul> const&, js::frontend::CompilationAtomCache&)+155
+    js::frontend::CompilationStencil::instantiateStencilAfterPreparation(JSContext*, js::frontend::CompilationInput&, js::frontend::CompilationStencil const&, js::frontend::CompilationGCOutput&)+204
+]: 21504
+@postBarrier[
+    js::InternalBarrierMethods<JSAtom*, void>::postBarrier(JSAtom**, JSAtom*, JSAtom*)+0
+    void mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::forEachSlot<mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<js::WeakHeapPtr<JSAtom*> const>&)#1}>(char*, unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<js::WeakHeapPtr<JSAtom*> const>&)#1}&&)+334
+    mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::rehashIfOverloaded(mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)+642
+    bool mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::add<JSAtom*&>(mozilla::detail::HashTable<js::WeakHeapPtr<JSAtom*> const, mozilla::HashSet<js::WeakHeapPtr<JSAtom*>, js::AtomHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::AddPtr&, JSAtom*&)+271
+    JSAtom* js::AtomizeCharsNonStaticValidLength<unsigned char>(JSContext*, unsigned int, unsigned char const*, unsigned long)+4544
+    js::frontend::InstantiateMarkedAtoms(JSContext*, js::FrontendContext*, mozilla::Span<js::frontend::ParserAtom*, 18446744073709551615ul> const&, js::frontend::CompilationAtomCache&)+155
+    js::frontend::CompilationStencil::instantiateStencilAfterPreparation(JSContext*, js::frontend::CompilationInput&, js::frontend::CompilationStencil const&, js::frontend::CompilationGCOutput&)+204
+]: 21504
+@postBarrier[
+    0x5e2cdd580bf0 <not found>
+    0x5e2cdd730789 <not found>
+    0x5e2cddabfce8 <not found>
+    0x5e2cddad3624 <not found>
+    0x5e2cdda82ce7 <not found>
+    0x5e2cdda82ea9 <not found>
+    0x5e2cdd61450b <not found>
+]: 27485
+@postBarrier[]: 103000
+=== END postBarrier ===
+=== BEGIN readBarrier ===
+
+=== END readBarrier ===
+Sleeping for 2 seconds...
+xxxpid=1480532
+
+
+
+
+

@@ -1,0 +1,393 @@
+Attaching 6 probes...
+Attaching probes for /home/matthew/unified-git/obj-opt-shell-nodebug-x86_64-pc-linux..
+
+Starting JetStream3
+Running string-unpack-code-SP:
+    Startup: 102.371
+    Worst Case: 138.897
+    Average: 175.703
+    Score: 135.690
+    Wall time: 0:03.443
+string-unpack-code-SP
+
+
+First: 102.371
+Worst: 138.897
+Average: 175.703
+
+Total Score:  135.690 
+
+=== BEGIN preBarrier ===
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::RegExpObject::setSource(JSAtom*)+38
+    js::RegExpObject::initIgnoringLastIndex(JSAtom*, JS::RegExpFlags)+73
+    RegExpInitializeIgnoringLastIndex(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>)+281
+    js::regexp_construct(JSContext*, unsigned int, JS::Value*)+1673
+    0x2551600abaf8 Ion: run/decompressedPrototype< (@evaluate:73:37)
+    0x2551600ac432 BaselineIC: Call.CallScripted
+]: 233
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::RegExpObject::setSource(JSAtom*)+38
+    js::RegExpObject::initIgnoringLastIndex(JSAtom*, JS::RegExpFlags)+73
+    RegExpInitializeIgnoringLastIndex(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>)+281
+    js::regexp_construct(JSContext*, unsigned int, JS::Value*)+1673
+    0x2551600a9c68 Ion: run/decompressedJQuery< (@evaluate:34:34)
+    0x2551600ac432 BaselineIC: Call.CallScripted
+]: 233
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::RegExpObject::initIgnoringLastIndex(JSAtom*, JS::RegExpFlags)+62
+    RegExpInitializeIgnoringLastIndex(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>)+281
+    js::regexp_construct(JSContext*, unsigned int, JS::Value*)+1673
+    0x2551600a9c68 Ion: run/decompressedJQuery< (@evaluate:34:34)
+    0x2551600ac432 BaselineIC: Call.CallScripted
+]: 233
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::RegExpObject::initIgnoringLastIndex(JSAtom*, JS::RegExpFlags)+110
+    RegExpInitializeIgnoringLastIndex(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>)+281
+    js::regexp_construct(JSContext*, unsigned int, JS::Value*)+1673
+    0x2551600a9c68 Ion: run/decompressedJQuery< (@evaluate:34:34)
+    0x2551600ac432 BaselineIC: Call.CallScripted
+]: 233
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::RegExpObject::initIgnoringLastIndex(JSAtom*, JS::RegExpFlags)+62
+    RegExpInitializeIgnoringLastIndex(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>)+281
+    js::regexp_construct(JSContext*, unsigned int, JS::Value*)+1673
+    0x2551600abaf8 Ion: run/decompressedPrototype< (@evaluate:73:37)
+    0x2551600ac432 BaselineIC: Call.CallScripted
+]: 233
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::RegExpObject::initIgnoringLastIndex(JSAtom*, JS::RegExpFlags)+110
+    RegExpInitializeIgnoringLastIndex(JSContext*, JS::Handle<js::RegExpObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>)+281
+    js::regexp_construct(JSContext*, unsigned int, JS::Value*)+1673
+    0x2551600abaf8 Ion: run/decompressedPrototype< (@evaluate:73:37)
+    0x2551600ac432 BaselineIC: Call.CallScripted
+]: 233
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeDefineProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, JS::Handle<JS::PropertyDescriptor>, JS::ObjectOpResult&)+5043
+    js::DefineDataProperty(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::PropertyKey>, JS::Handle<JS::Value>, unsigned int)+227
+    js::DefineDataProperty(JSContext*, JS::Handle<JSObject*>, js::PropertyName*, JS::Handle<JS::Value>, unsigned int)+82
+    js::Interpret(JSContext*, js::RunState&)+1990
+    0x255160074185 Interpreter: * (/home/matthew/perf/JetStream/./JetStreamDriver.js:1:1)
+    js::RunScript(JSContext*, js::RunState&)+1036
+]: 304
+@preBarrier[
+    js::InternalBarrierMethods<JSAtom*, void>::preBarrier(JSAtom*)+0
+    JSRuntime::finishSelfHosting()+244
+    js::gc::GCRuntime::finishRoots()+114
+    JSRuntime::destroyRuntime()+252
+    js::DestroyContext(JSContext*)+171
+    main+1799
+    __libc_start_call_main+122
+]: 416
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setDenseElementUnchecked(unsigned int, JS::Value const&)+54
+    bool js::NativeSetProperty<(js::QualifiedBool)1>(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, JS::ObjectOpResult&)+3812
+    js::SetObjectElementWithReceiver(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+386
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+297
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+    0x2551600a73a2 Ion: run/decompressedDojo< (@evaluate:57:32)
+]: 910
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setDenseElementUnchecked(unsigned int, JS::Value const&)+54
+    bool js::NativeSetProperty<(js::QualifiedBool)1>(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, JS::ObjectOpResult&)+3812
+    js::SetObjectElementWithReceiver(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+386
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+297
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+    0x2551600a4bf2 Ion: run/decompressedMochiKit< (@evaluate:19:36)
+]: 950
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setDenseElementUnchecked(unsigned int, JS::Value const&)+54
+    bool js::NativeSetProperty<(js::QualifiedBool)1>(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, JS::ObjectOpResult&)+3812
+    js::SetObjectElementWithReceiver(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+386
+    bool js::jit::SetElementMegamorphic<false>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+297
+    0x255160059717 VMWrapper: SetElementMegamorphicNoCache
+    0x2551600882e0 BaselineIC: SetProp.MegamorphicSetElement
+]: 1040
+@preBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::preBarrier(js::PropMap*)+0
+    js::DictionaryShape::updateNewShape(js::EnumFlags<js::ObjectFlag>, js::DictionaryPropMap*, unsigned int)+36
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+1102
+    bool js::jit::TryAddOrSetPlainObjectProperty<false>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2199
+    bool js::jit::SetElementMegamorphic<false>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+205
+    0x255160059717 VMWrapper: SetElementMegamorphicNoCache
+    0x2551600882e0 BaselineIC: SetProp.MegamorphicSetElement
+]: 7059
+@preBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::preBarrier(js::PropMap*)+0
+    js::DictionaryShape::updateNewShape(js::EnumFlags<js::ObjectFlag>, js::DictionaryPropMap*, unsigned int)+36
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+1102
+    bool js::jit::TryAddOrSetPlainObjectProperty<true>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2429
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+205
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+    0x2551600a73a2 Ion: run/decompressedDojo< (@evaluate:57:32)
+]: 12214
+@preBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::preBarrier(js::PropMap*)+0
+    js::DictionaryShape::updateNewShape(js::EnumFlags<js::ObjectFlag>, js::DictionaryPropMap*, unsigned int)+36
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+1102
+    bool js::jit::TryAddOrSetPlainObjectProperty<true>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2429
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+205
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+    0x2551600a4bf2 Ion: run/decompressedMochiKit< (@evaluate:19:36)
+]: 14821
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setDenseElementUnchecked(unsigned int, JS::Value const&)+54
+    bool js::NativeSetProperty<(js::QualifiedBool)1>(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, JS::ObjectOpResult&)+3812
+    js::SetObjectElementWithReceiver(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+386
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+297
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+    0x2551600aeaa2 Ion: run/decompressedDojo< (@evaluate:57:32)
+]: 22810
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setDenseElementUnchecked(unsigned int, JS::Value const&)+54
+    bool js::NativeSetProperty<(js::QualifiedBool)1>(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, JS::ObjectOpResult&)+3812
+    js::SetObjectElementWithReceiver(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+386
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+297
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+    0x2551600ad042 Ion: run/decompressedMochiKit< (@evaluate:19:36)
+]: 22850
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setDenseElementUnchecked(unsigned int, JS::Value const&)+54
+    bool js::NativeSetProperty<(js::QualifiedBool)1>(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, JS::ObjectOpResult&)+3812
+    js::SetObjectElementWithReceiver(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+386
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+297
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+    0x2551600a9432 Ion: run/decompressedJQuery< (@evaluate:34:34)
+]: 23700
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setDenseElementUnchecked(unsigned int, JS::Value const&)+54
+    bool js::NativeSetProperty<(js::QualifiedBool)1>(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, JS::ObjectOpResult&)+3812
+    js::SetObjectElementWithReceiver(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+386
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+297
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+    0x2551600ab2c2 Ion: run/decompressedPrototype< (@evaluate:73:37)
+]: 23700
+@preBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::preBarrier(js::PropMap*)+0
+    js::DictionaryShape::updateNewShape(js::EnumFlags<js::ObjectFlag>, js::DictionaryPropMap*, unsigned int)+36
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+1102
+    bool js::jit::TryAddOrSetPlainObjectProperty<true>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2429
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+205
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+    0x2551600aeaa2 Ion: run/decompressedDojo< (@evaluate:57:32)
+]: 308202
+@preBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::preBarrier(js::PropMap*)+0
+    js::DictionaryShape::updateNewShape(js::EnumFlags<js::ObjectFlag>, js::DictionaryPropMap*, unsigned int)+36
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+1102
+    bool js::jit::TryAddOrSetPlainObjectProperty<true>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2429
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+205
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+    0x2551600ad042 Ion: run/decompressedMochiKit< (@evaluate:19:36)
+]: 368841
+=== END preBarrier ===
+=== BEGIN postBarrier ===
+@postBarrier[
+    js::InternalBarrierMethods<js::SharedShape*, void>::postBarrier(js::SharedShape**, js::SharedShape*, js::SharedShape*)+0
+    void mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::forEachSlot<mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<js::WeakHeapPtr<js::SharedShape*> const>&)#1}>(char*, unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::changeTableSize(unsigned int, mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)::{lambda(mozilla::detail::EntrySlot<js::WeakHeapPtr<js::SharedShape*> const>&)#1}&&)+334
+    mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::rehashIfOverloaded(mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::FailureBehavior)+642
+    bool mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::add<JS::Rooted<js::SharedShape*> const&>(mozilla::detail::HashTable<js::WeakHeapPtr<js::SharedShape*> const, mozilla::HashSet<js::WeakHeapPtr<js::SharedShape*>, js::PropMapShapeHasher, js::SystemAllocPolicy>::SetHashPolicy, js::SystemAllocPolicy>::AddPtr&, JS::Rooted<js::SharedShape*> const&)+271
+    js::SharedShape::getPropMapShape(JSContext*, js::BaseShape*, unsigned long, JS::Handle<js::SharedPropMap*>, unsigned int, js::EnumFlags<js::ObjectFlag>, bool*)+661
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+1262
+    bool js::jit::TryAddOrSetPlainObjectProperty<false>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2199
+]: 3072
+@postBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::postBarrier(js::PropMap**, js::PropMap*, js::PropMap*)+0
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+899
+    bool js::jit::TryAddOrSetPlainObjectProperty<false>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2199
+    bool js::jit::SetElementMegamorphic<false>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+205
+    0x255160059717 VMWrapper: SetElementMegamorphicNoCache
+    0x2551600882e0 BaselineIC: SetProp.MegamorphicSetElement
+    0x255160090111 Baseline: run/decompressedDojo< (@evaluate:57:32)
+]: 3456
+@postBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::postBarrier(js::PropMap**, js::PropMap*, js::PropMap*)+0
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+899
+    bool js::jit::TryAddOrSetPlainObjectProperty<false>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2199
+    bool js::jit::SetElementMegamorphic<false>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+205
+    0x255160059717 VMWrapper: SetElementMegamorphicNoCache
+    0x2551600882e0 BaselineIC: SetProp.MegamorphicSetElement
+    0x255160088d81 Baseline: run/decompressedMochiKit< (@evaluate:19:36)
+]: 3603
+@postBarrier[
+    0x601d8a396bf0 <not found>
+    0x601d8a5467a4 <not found>
+    0x601d8a8d5ce8 <not found>
+    0x601d8a8e9624 <not found>
+    0x601d8a898ce7 <not found>
+    0x601d8a898ea9 <not found>
+    0x601d8a42a50b <not found>
+]: 3800
+@postBarrier[
+    0x601d8a396bf0 <not found>
+    0x601d8a546789 <not found>
+    0x601d8a8d5ce8 <not found>
+    0x601d8a8e9624 <not found>
+    0x601d8a898ce7 <not found>
+    0x601d8a898ea9 <not found>
+    0x601d8a42a50b <not found>
+]: 4226
+@postBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::postBarrier(js::PropMap**, js::PropMap*, js::PropMap*)+0
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+899
+    bool js::jit::TryAddOrSetPlainObjectProperty<true>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2429
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+205
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+    0x2551600a73a2 Ion: run/decompressedDojo< (@evaluate:57:32)
+    0x2551600ac432 BaselineIC: Call.CallScripted
+]: 5416
+@postBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::postBarrier(js::PropMap**, js::PropMap*, js::PropMap*)+0
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+899
+    bool js::jit::TryAddOrSetPlainObjectProperty<true>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2429
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+205
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+    0x2551600a4bf2 Ion: run/decompressedMochiKit< (@evaluate:19:36)
+    0x2551600ac432 BaselineIC: Call.CallScripted
+]: 6476
+@postBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::postBarrier(js::PropMap**, js::PropMap*, js::PropMap*)+0
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+899
+    bool js::jit::TryAddOrSetPlainObjectProperty<true>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2429
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+205
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+    0x2551600a73a2 Ion: run/decompressedDojo< (@evaluate:57:32)
+    0x2551600544e6 Trampoline: EnterJIT
+]: 6798
+@postBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::postBarrier(js::PropMap**, js::PropMap*, js::PropMap*)+0
+    js::DictionaryShape::updateNewShape(js::EnumFlags<js::ObjectFlag>, js::DictionaryPropMap*, unsigned int)+55
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+1102
+    bool js::jit::TryAddOrSetPlainObjectProperty<false>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2199
+    bool js::jit::SetElementMegamorphic<false>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+205
+    0x255160059717 VMWrapper: SetElementMegamorphicNoCache
+    0x2551600882e0 BaselineIC: SetProp.MegamorphicSetElement
+]: 7059
+@postBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::postBarrier(js::PropMap**, js::PropMap*, js::PropMap*)+0
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+899
+    bool js::jit::TryAddOrSetPlainObjectProperty<true>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2429
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+205
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+    0x2551600a4bf2 Ion: run/decompressedMochiKit< (@evaluate:19:36)
+    0x2551600544e6 Trampoline: EnterJIT
+]: 8345
+@postBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::postBarrier(js::PropMap**, js::PropMap*, js::PropMap*)+0
+    js::DictionaryShape::updateNewShape(js::EnumFlags<js::ObjectFlag>, js::DictionaryPropMap*, unsigned int)+55
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+1102
+    bool js::jit::TryAddOrSetPlainObjectProperty<true>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2429
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+205
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+    0x2551600a73a2 Ion: run/decompressedDojo< (@evaluate:57:32)
+]: 12214
+@postBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::postBarrier(js::PropMap**, js::PropMap*, js::PropMap*)+0
+    js::DictionaryShape::updateNewShape(js::EnumFlags<js::ObjectFlag>, js::DictionaryPropMap*, unsigned int)+55
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+1102
+    bool js::jit::TryAddOrSetPlainObjectProperty<true>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2429
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+205
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+    0x2551600a4bf2 Ion: run/decompressedMochiKit< (@evaluate:19:36)
+]: 14821
+@postBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::postBarrier(js::PropMap**, js::PropMap*, js::PropMap*)+0
+    js::SharedPropMap::toDictionaryMap(JSContext*, JS::Handle<js::SharedPropMap*>, unsigned int)+792
+    js::NativeObject::toDictionaryMode(JSContext*, JS::Handle<js::NativeObject*>)+194
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+1834
+    bool js::jit::TryAddOrSetPlainObjectProperty<true>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2429
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+205
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+]: 15304
+@postBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::postBarrier(js::PropMap**, js::PropMap*, js::PropMap*)+0
+    js::SharedPropMap::toDictionaryMap(JSContext*, JS::Handle<js::SharedPropMap*>, unsigned int)+295
+    js::NativeObject::toDictionaryMode(JSContext*, JS::Handle<js::NativeObject*>)+194
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+1834
+    bool js::jit::TryAddOrSetPlainObjectProperty<true>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2429
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+205
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+]: 15304
+@postBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::postBarrier(js::PropMap**, js::PropMap*, js::PropMap*)+0
+    js::DictionaryPropMap::addProperty(JSContext*, JSClass const*, JS::MutableHandle<js::DictionaryPropMap*>, unsigned int*, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int, js::EnumFlags<js::ObjectFlag>*)+534
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+1064
+    bool js::jit::TryAddOrSetPlainObjectProperty<true>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2429
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+205
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+    0x2551600aeaa2 Ion: run/decompressedDojo< (@evaluate:57:32)
+]: 38468
+@postBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::postBarrier(js::PropMap**, js::PropMap*, js::PropMap*)+0
+    js::DictionaryPropMap::addProperty(JSContext*, JSClass const*, JS::MutableHandle<js::DictionaryPropMap*>, unsigned int*, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int, js::EnumFlags<js::ObjectFlag>*)+534
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+1064
+    bool js::jit::TryAddOrSetPlainObjectProperty<true>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2429
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+205
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+    0x2551600ad042 Ion: run/decompressedMochiKit< (@evaluate:19:36)
+]: 46020
+@postBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::postBarrier(js::PropMap**, js::PropMap*, js::PropMap*)+0
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+899
+    bool js::jit::TryAddOrSetPlainObjectProperty<true>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2429
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+205
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+    0x2551600aeaa2 Ion: run/decompressedDojo< (@evaluate:57:32)
+    0x2551600ac432 BaselineIC: Call.CallScripted
+]: 308202
+@postBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::postBarrier(js::PropMap**, js::PropMap*, js::PropMap*)+0
+    js::DictionaryShape::updateNewShape(js::EnumFlags<js::ObjectFlag>, js::DictionaryPropMap*, unsigned int)+55
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+1102
+    bool js::jit::TryAddOrSetPlainObjectProperty<true>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2429
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+205
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+    0x2551600aeaa2 Ion: run/decompressedDojo< (@evaluate:57:32)
+]: 308202
+@postBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::postBarrier(js::PropMap**, js::PropMap*, js::PropMap*)+0
+    js::DictionaryShape::updateNewShape(js::EnumFlags<js::ObjectFlag>, js::DictionaryPropMap*, unsigned int)+55
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+1102
+    bool js::jit::TryAddOrSetPlainObjectProperty<true>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2429
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+205
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+    0x2551600ad042 Ion: run/decompressedMochiKit< (@evaluate:19:36)
+]: 368841
+@postBarrier[
+    js::InternalBarrierMethods<js::PropMap*, void>::postBarrier(js::PropMap**, js::PropMap*, js::PropMap*)+0
+    js::NativeObject::addProperty(JSContext*, JS::Handle<js::NativeObject*>, JS::Handle<JS::PropertyKey>, js::PropertyFlags, unsigned int*)+899
+    bool js::jit::TryAddOrSetPlainObjectProperty<true>(JSContext*, JS::Handle<js::PlainObject*>, JS::PropertyKey, JS::Handle<JS::Value>, bool*)+2429
+    bool js::jit::SetElementMegamorphic<true>(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>, JS::Handle<JS::Value>, bool)+205
+    0x255160059767 VMWrapper: SetElementMegamorphicYesCache
+    0x2551600ad042 Ion: run/decompressedMochiKit< (@evaluate:19:36)
+    0x2551600ac432 BaselineIC: Call.CallScripted
+]: 368841
+=== END postBarrier ===
+=== BEGIN readBarrier ===
+
+=== END readBarrier ===
+Sleeping for 2 seconds...
+xxxpid=1480311
+
+
+
+
+

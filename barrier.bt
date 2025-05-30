@@ -1,0 +1,42 @@
+BEGIN
+{
+   printf("Attaching probes for %s\n\n", str($1))
+}
+
+
+uprobe:$1:*InternalBarrierMethods*preBarrier*
+{
+    @preBarrier[ustack(7)] = count()
+}
+
+uprobe:$1:*InternalBarrierMethods*postBarrier*
+{
+    @postBarrier[ustack(7)] = count()
+}
+
+uprobe:$1:*InternalBarrierMethods*readBarrier*
+{
+    @readBarrier[ustack(7)] = count()
+}
+
+uprobe:$1:cpp:JS_ShutDown
+{
+    printf("=== BEGIN preBarrier ===\n");
+    print(@preBarrier, 20);
+    printf("=== END preBarrier ===\n");
+
+    printf("=== BEGIN postBarrier ===\n");
+    print(@postBarrier, 20);
+    printf("=== END postBarrier ===\n");
+
+    printf("=== BEGIN readBarrier ===\n");
+    print(@readBarrier, 20);
+    printf("=== END readBarrier ===\n");
+}
+
+END {
+     // Don't print map on exit.
+    clear(@preBarrier);
+     clear(@postBarrier);
+     clear(@readBarrier);
+}

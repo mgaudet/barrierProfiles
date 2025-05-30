@@ -1,0 +1,385 @@
+Attaching 6 probes...
+Attaching probes for /home/matthew/unified-git/obj-opt-shell-nodebug-x86_64-pc-linux..
+
+Starting JetStream3
+Running bigint-noble-secp256k1:
+    Startup: 37.549
+    Worst Case: 53.082
+    Average: 58.122
+    Score: 48.749
+    Wall time: 0:10.405
+bigint-noble-secp256k1
+
+
+First: 37.549
+Worst: 53.082
+Average: 58.122
+
+Total Score:  48.749 
+
+=== BEGIN preBarrier ===
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::ArrayBufferObject::addView(JSContext*, js::ArrayBufferViewObject*)+82
+    js::TypedArrayObject::ensureHasBuffer(JSContext*, JS::Handle<js::TypedArrayObject*>)+468
+    TypedArray_bufferGetter(JSContext*, unsigned int, JS::Value*)+198
+    0x14ff0f52a83 Ion: SHA2 (@evaluate:1287:16)
+    0x14ff0f50bc4 Ion: SHA256 (@evaluate:1497:16)
+]: 22500
+@preBarrier[]: 23371
+@preBarrier[
+    js::InternalBarrierMethods<js::SavedFrame*, void>::preBarrier(js::SavedFrame*)+0
+    js::LiveSavedFrameCache::find(JSContext*, js::LiveSavedFrameCache::FramePtr&, unsigned char const*, JS::MutableHandle<js::SavedFrame*>) const+466
+    js::SavedStacks::insertFrames(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+1594
+    js::SavedStacks::saveCurrentStack(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+122
+    JS::CaptureCurrentStack(JSContext*, JS::MutableHandle<JSObject*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+102
+    PromiseDebugInfo::setResolutionInfo(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<js::SavedFrame*>)+442
+    ResolvePromise(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<JS::Value>, JS::PromiseState, JS::Handle<js::SavedFrame*>)+179
+]: 23526
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    ResolvePromise(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<JS::Value>, JS::PromiseState, JS::Handle<js::SavedFrame*>)+165
+    FulfillMaybeWrappedPromise(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>)+130
+    js::ResolvePromiseInternal(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>)+1807
+    js::AsyncFunctionResolve(JSContext*, JS::Handle<js::AsyncFunctionGeneratorObject*>, JS::Handle<JS::Value>)+83
+    0x14ff0e5617c VMWrapper: AsyncFunctionResolve
+]: 28611
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    ResolvePromise(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<JS::Value>, JS::PromiseState, JS::Handle<js::SavedFrame*>)+84
+    FulfillMaybeWrappedPromise(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>)+130
+    js::ResolvePromiseInternal(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>)+1807
+    js::AsyncFunctionResolve(JSContext*, JS::Handle<js::AsyncFunctionGeneratorObject*>, JS::Handle<JS::Value>)+83
+    0x14ff0e5617c VMWrapper: AsyncFunctionResolve
+]: 28611
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    ResolvePromise(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<JS::Value>, JS::PromiseState, JS::Handle<js::SavedFrame*>)+143
+    FulfillMaybeWrappedPromise(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>)+130
+    js::ResolvePromiseInternal(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>)+1807
+    js::AsyncFunctionResolve(JSContext*, JS::Handle<js::AsyncFunctionGeneratorObject*>, JS::Handle<JS::Value>)+83
+    0x14ff0e5617c VMWrapper: AsyncFunctionResolve
+]: 28611
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    PromiseDebugInfo::setResolutionInfo(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<js::SavedFrame*>)+223
+    ResolvePromise(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<JS::Value>, JS::PromiseState, JS::Handle<js::SavedFrame*>)+179
+    FulfillMaybeWrappedPromise(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>)+130
+    js::ResolvePromiseInternal(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>)+1807
+    js::AsyncFunctionResolve(JSContext*, JS::Handle<js::AsyncFunctionGeneratorObject*>, JS::Handle<JS::Value>)+83
+]: 28686
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    PromiseDebugInfo::setResolutionInfo(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<js::SavedFrame*>)+793
+    ResolvePromise(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<JS::Value>, JS::PromiseState, JS::Handle<js::SavedFrame*>)+179
+    FulfillMaybeWrappedPromise(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>)+130
+    js::ResolvePromiseInternal(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>)+1807
+    js::AsyncFunctionResolve(JSContext*, JS::Handle<js::AsyncFunctionGeneratorObject*>, JS::Handle<JS::Value>)+83
+]: 28686
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    PromiseDebugInfo::create(JSContext*, JS::Handle<js::PromiseObject*>)+465
+    js::CreatePromiseObjectWithoutResolutionFunctions(JSContext*)+207
+    js::CreatePromiseObjectForAsync(JSContext*)+27
+    js::AsyncFunctionGeneratorObject::create(JSContext*, JS::Handle<JSFunction*>)+32
+    js::AbstractGeneratorObject::create(JSContext*, JS::Handle<JSFunction*>, JS::Handle<JSScript*>, JS::Handle<JSObject*>, JS::Handle<js::ArgumentsObject*>)+350
+]: 33500
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    PromiseDebugInfo::create(JSContext*, JS::Handle<js::PromiseObject*>)+217
+    js::CreatePromiseObjectWithoutResolutionFunctions(JSContext*)+207
+    js::CreatePromiseObjectForAsync(JSContext*)+27
+    js::AsyncFunctionGeneratorObject::create(JSContext*, JS::Handle<JSFunction*>)+32
+    js::AbstractGeneratorObject::create(JSContext*, JS::Handle<JSFunction*>, JS::Handle<JSScript*>, JS::Handle<JSObject*>, JS::Handle<js::ArgumentsObject*>)+350
+]: 33500
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    PromiseDebugInfo::create(JSContext*, JS::Handle<js::PromiseObject*>)+408
+    js::CreatePromiseObjectWithoutResolutionFunctions(JSContext*)+207
+    js::CreatePromiseObjectForAsync(JSContext*)+27
+    js::AsyncFunctionGeneratorObject::create(JSContext*, JS::Handle<JSFunction*>)+32
+    js::AbstractGeneratorObject::create(JSContext*, JS::Handle<JSFunction*>, JS::Handle<JSScript*>, JS::Handle<JSObject*>, JS::Handle<js::ArgumentsObject*>)+350
+]: 33500
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    PromiseDebugInfo::create(JSContext*, JS::Handle<js::PromiseObject*>)+440
+    js::CreatePromiseObjectWithoutResolutionFunctions(JSContext*)+207
+    js::CreatePromiseObjectForAsync(JSContext*)+27
+    js::AsyncFunctionGeneratorObject::create(JSContext*, JS::Handle<JSFunction*>)+32
+    js::AbstractGeneratorObject::create(JSContext*, JS::Handle<JSFunction*>, JS::Handle<JSScript*>, JS::Handle<JSObject*>, JS::Handle<js::ArgumentsObject*>)+350
+]: 33500
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    PromiseDebugInfo::create(JSContext*, JS::Handle<js::PromiseObject*>)+239
+    js::CreatePromiseObjectWithoutResolutionFunctions(JSContext*)+207
+    js::CreatePromiseObjectForAsync(JSContext*)+27
+    js::AsyncFunctionGeneratorObject::create(JSContext*, JS::Handle<JSFunction*>)+32
+    js::AbstractGeneratorObject::create(JSContext*, JS::Handle<JSFunction*>, JS::Handle<JSScript*>, JS::Handle<JSObject*>, JS::Handle<js::ArgumentsObject*>)+350
+]: 33500
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::ArrayBufferObject::initialize(unsigned long, js::ArrayBufferObject::BufferContents)+143
+    std::tuple<js::ArrayBufferObject*, unsigned char*> js::ArrayBufferObject::createBufferAndData<(js::ArrayBufferObject::FillContents)0>(JSContext*, unsigned long, js::AutoSetNewObjectMetadata&, JS::Handle<JSObject*>)+229
+    js::ArrayBufferObject::createZeroed(JSContext*, unsigned long, JS::Handle<JSObject*>)+68
+    js::TypedArrayObject::ensureHasBuffer(JSContext*, JS::Handle<js::TypedArrayObject*>)+289
+    TypedArray_bufferGetter(JSContext*, unsigned int, JS::Value*)+198
+]: 48002
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::ArrayBufferObject::initialize(unsigned long, js::ArrayBufferObject::BufferContents)+176
+    std::tuple<js::ArrayBufferObject*, unsigned char*> js::ArrayBufferObject::createBufferAndData<(js::ArrayBufferObject::FillContents)0>(JSContext*, unsigned long, js::AutoSetNewObjectMetadata&, JS::Handle<JSObject*>)+229
+    js::ArrayBufferObject::createZeroed(JSContext*, unsigned long, JS::Handle<JSObject*>)+68
+    js::TypedArrayObject::ensureHasBuffer(JSContext*, JS::Handle<js::TypedArrayObject*>)+289
+    TypedArray_bufferGetter(JSContext*, unsigned int, JS::Value*)+198
+]: 48002
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::ArrayBufferObject::initialize(unsigned long, js::ArrayBufferObject::BufferContents)+78
+    std::tuple<js::ArrayBufferObject*, unsigned char*> js::ArrayBufferObject::createBufferAndData<(js::ArrayBufferObject::FillContents)0>(JSContext*, unsigned long, js::AutoSetNewObjectMetadata&, JS::Handle<JSObject*>)+229
+    js::ArrayBufferObject::createZeroed(JSContext*, unsigned long, JS::Handle<JSObject*>)+68
+    js::TypedArrayObject::ensureHasBuffer(JSContext*, JS::Handle<js::TypedArrayObject*>)+289
+    TypedArray_bufferGetter(JSContext*, unsigned int, JS::Value*)+198
+]: 48002
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::ArrayBufferObject::initialize(unsigned long, js::ArrayBufferObject::BufferContents)+47
+    std::tuple<js::ArrayBufferObject*, unsigned char*> js::ArrayBufferObject::createBufferAndData<(js::ArrayBufferObject::FillContents)0>(JSContext*, unsigned long, js::AutoSetNewObjectMetadata&, JS::Handle<JSObject*>)+229
+    js::ArrayBufferObject::createZeroed(JSContext*, unsigned long, JS::Handle<JSObject*>)+68
+    js::TypedArrayObject::ensureHasBuffer(JSContext*, JS::Handle<js::TypedArrayObject*>)+289
+    TypedArray_bufferGetter(JSContext*, unsigned int, JS::Value*)+198
+]: 48002
+@preBarrier[
+    js::InternalBarrierMethods<JS::Value, void>::preBarrier(JS::Value const&)+0
+    js::NativeObject::setFixedSlot(unsigned int, JS::Value const&)+35
+    js::ArrayBufferObject::initialize(unsigned long, js::ArrayBufferObject::BufferContents)+109
+    std::tuple<js::ArrayBufferObject*, unsigned char*> js::ArrayBufferObject::createBufferAndData<(js::ArrayBufferObject::FillContents)0>(JSContext*, unsigned long, js::AutoSetNewObjectMetadata&, JS::Handle<JSObject*>)+229
+    js::ArrayBufferObject::createZeroed(JSContext*, unsigned long, JS::Handle<JSObject*>)+68
+    js::TypedArrayObject::ensureHasBuffer(JSContext*, JS::Handle<js::TypedArrayObject*>)+289
+    TypedArray_bufferGetter(JSContext*, unsigned int, JS::Value*)+198
+]: 48002
+@preBarrier[
+    js::InternalBarrierMethods<js::SavedFrame*, void>::preBarrier(js::SavedFrame*)+0
+    js::LiveSavedFrameCache::~LiveSavedFrameCache()+56
+    js::jit::MaybeEnterJit(JSContext*, js::RunState&)+712
+    js::RunScript(JSContext*, js::RunState&)+524
+    js::InternalCallOrConstruct(JSContext*, JS::CallArgs const&, js::MaybeConstruct, js::CallReason)+1199
+    js::Call(JSContext*, JS::Handle<JS::Value>, JS::Handle<JS::Value>, js::AnyInvokeArgs const&, JS::MutableHandle<JS::Value>, js::CallReason)+246
+    js::CallSelfHostedFunction(JSContext*, JS::Handle<js::PropertyName*>, JS::Handle<JS::Value>, js::AnyInvokeArgs const&, JS::MutableHandle<JS::Value>)+229
+]: 80878
+@preBarrier[
+    js::InternalBarrierMethods<js::SavedFrame*, void>::preBarrier(js::SavedFrame*)+0
+    mozilla::detail::VectorImpl<js::LiveSavedFrameCache::Entry, 0ul, js::SystemAllocPolicy, false>::growTo(mozilla::Vector<js::LiveSavedFrameCache::Entry, 0ul, js::SystemAllocPolicy>&, unsigned long)+264
+    js::LiveSavedFrameCache::insert(JSContext*, js::LiveSavedFrameCache::FramePtr&&, unsigned char const*, JS::Handle<js::SavedFrame*>)+54
+    js::SavedStacks::insertFrames(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+4203
+    js::SavedStacks::saveCurrentStack(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+122
+    JS::CaptureCurrentStack(JSContext*, JS::MutableHandle<JSObject*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+102
+    PromiseDebugInfo::create(JSContext*, JS::Handle<js::PromiseObject*>)+144
+]: 85945
+=== END preBarrier ===
+=== BEGIN postBarrier ===
+@postBarrier[
+    js::InternalBarrierMethods<js::SavedFrame*, void>::postBarrier(js::SavedFrame**, js::SavedFrame*, js::SavedFrame*)+0
+    mozilla::detail::VectorImpl<js::LiveSavedFrameCache::Entry, 0ul, js::SystemAllocPolicy, false>::growTo(mozilla::Vector<js::LiveSavedFrameCache::Entry, 0ul, js::SystemAllocPolicy>&, unsigned long)+173
+    js::LiveSavedFrameCache::insert(JSContext*, js::LiveSavedFrameCache::FramePtr&&, unsigned char const*, JS::Handle<js::SavedFrame*>)+54
+    js::SavedStacks::insertFrames(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+4203
+    js::SavedStacks::saveCurrentStack(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+122
+    JS::CaptureCurrentStack(JSContext*, JS::MutableHandle<JSObject*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+102
+    PromiseDebugInfo::setResolutionInfo(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<js::SavedFrame*>)+442
+]: 7688
+@postBarrier[
+    js::InternalBarrierMethods<js::SavedFrame*, void>::postBarrier(js::SavedFrame**, js::SavedFrame*, js::SavedFrame*)+0
+    mozilla::detail::VectorImpl<js::LiveSavedFrameCache::Entry, 0ul, js::SystemAllocPolicy, false>::growTo(mozilla::Vector<js::LiveSavedFrameCache::Entry, 0ul, js::SystemAllocPolicy>&, unsigned long)+277
+    js::LiveSavedFrameCache::insert(JSContext*, js::LiveSavedFrameCache::FramePtr&&, unsigned char const*, JS::Handle<js::SavedFrame*>)+54
+    js::SavedStacks::insertFrames(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+4203
+    js::SavedStacks::saveCurrentStack(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+122
+    JS::CaptureCurrentStack(JSContext*, JS::MutableHandle<JSObject*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+102
+    PromiseDebugInfo::setResolutionInfo(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<js::SavedFrame*>)+442
+]: 7688
+@postBarrier[
+    js::InternalBarrierMethods<js::SavedFrame*, void>::postBarrier(js::SavedFrame**, js::SavedFrame*, js::SavedFrame*)+0
+    js::LiveSavedFrameCache::find(JSContext*, js::LiveSavedFrameCache::FramePtr&, unsigned char const*, JS::MutableHandle<js::SavedFrame*>) const+484
+    js::SavedStacks::insertFrames(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+1594
+    js::SavedStacks::saveCurrentStack(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+122
+    JS::CaptureCurrentStack(JSContext*, JS::MutableHandle<JSObject*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+102
+    PromiseDebugInfo::create(JSContext*, JS::Handle<js::PromiseObject*>)+144
+    js::CreatePromiseObjectWithoutResolutionFunctions(JSContext*)+207
+]: 17175
+@postBarrier[
+    js::InternalBarrierMethods<js::SavedFrame*, void>::postBarrier(js::SavedFrame**, js::SavedFrame*, js::SavedFrame*)+0
+    js::LiveSavedFrameCache::find(JSContext*, js::LiveSavedFrameCache::FramePtr&, unsigned char const*, JS::MutableHandle<js::SavedFrame*>) const+484
+    js::SavedStacks::insertFrames(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+1594
+    js::SavedStacks::saveCurrentStack(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+122
+    JS::CaptureCurrentStack(JSContext*, JS::MutableHandle<JSObject*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+102
+    PromiseDebugInfo::setResolutionInfo(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<js::SavedFrame*>)+442
+    ResolvePromise(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<JS::Value>, JS::PromiseState, JS::Handle<js::SavedFrame*>)+179
+]: 23526
+@postBarrier[
+    js::InternalBarrierMethods<js::SavedFrame*, void>::postBarrier(js::SavedFrame**, js::SavedFrame*, js::SavedFrame*)+0
+    js::LiveSavedFrameCache::insert(JSContext*, js::LiveSavedFrameCache::FramePtr&&, unsigned char const*, JS::Handle<js::SavedFrame*>)+136
+    js::SavedStacks::insertFrames(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+4203
+    js::SavedStacks::saveCurrentStack(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+122
+    JS::CaptureCurrentStack(JSContext*, JS::MutableHandle<JSObject*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+102
+    PromiseDebugInfo::setResolutionInfo(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<js::SavedFrame*>)+442
+    ResolvePromise(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<JS::Value>, JS::PromiseState, JS::Handle<js::SavedFrame*>)+179
+]: 38972
+@postBarrier[
+    js::InternalBarrierMethods<JSAtom*, void>::postBarrier(JSAtom**, JSAtom*, JSAtom*)+0
+    js::SavedStacks::insertFrames(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+3288
+    js::SavedStacks::saveCurrentStack(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+122
+    JS::CaptureCurrentStack(JSContext*, JS::MutableHandle<JSObject*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+102
+    PromiseDebugInfo::setResolutionInfo(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<js::SavedFrame*>)+442
+    ResolvePromise(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<JS::Value>, JS::PromiseState, JS::Handle<js::SavedFrame*>)+179
+    FulfillMaybeWrappedPromise(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>)+130
+]: 38972
+@postBarrier[
+    js::InternalBarrierMethods<JSAtom*, void>::postBarrier(JSAtom**, JSAtom*, JSAtom*)+0
+    js::SavedStacks::getLocation(JSContext*, js::FrameIter const&, JS::MutableHandle<js::SavedStacks::LocationValue>)+1499
+    js::SavedStacks::insertFrames(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+1887
+    js::SavedStacks::saveCurrentStack(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+122
+    JS::CaptureCurrentStack(JSContext*, JS::MutableHandle<JSObject*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+102
+    PromiseDebugInfo::setResolutionInfo(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<js::SavedFrame*>)+442
+    ResolvePromise(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<JS::Value>, JS::PromiseState, JS::Handle<js::SavedFrame*>)+179
+]: 38972
+@postBarrier[
+    js::InternalBarrierMethods<JSAtom*, void>::postBarrier(JSAtom**, JSAtom*, JSAtom*)+0
+    js::SavedStacks::insertFrames(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+1781
+    js::SavedStacks::saveCurrentStack(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+122
+    JS::CaptureCurrentStack(JSContext*, JS::MutableHandle<JSObject*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+102
+    PromiseDebugInfo::setResolutionInfo(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<js::SavedFrame*>)+442
+    ResolvePromise(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<JS::Value>, JS::PromiseState, JS::Handle<js::SavedFrame*>)+179
+    FulfillMaybeWrappedPromise(JSContext*, JS::Handle<JSObject*>, JS::Handle<JS::Value>)+130
+]: 38972
+@postBarrier[
+    js::InternalBarrierMethods<JSScript*, void>::postBarrier(JSScript**, JSScript*, JSScript*)+0
+    js::SavedStacks::getLocation(JSContext*, js::FrameIter const&, JS::MutableHandle<js::SavedStacks::LocationValue>)+1134
+    js::SavedStacks::insertFrames(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+1887
+    js::SavedStacks::saveCurrentStack(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+122
+    JS::CaptureCurrentStack(JSContext*, JS::MutableHandle<JSObject*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+102
+    PromiseDebugInfo::setResolutionInfo(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<js::SavedFrame*>)+442
+    ResolvePromise(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<JS::Value>, JS::PromiseState, JS::Handle<js::SavedFrame*>)+179
+]: 38972
+@postBarrier[
+    js::InternalBarrierMethods<JSScript*, void>::postBarrier(JSScript**, JSScript*, JSScript*)+0
+    js::SavedStacks::getLocation(JSContext*, js::FrameIter const&, JS::MutableHandle<js::SavedStacks::LocationValue>)+326
+    js::SavedStacks::insertFrames(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+1887
+    js::SavedStacks::saveCurrentStack(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+122
+    JS::CaptureCurrentStack(JSContext*, JS::MutableHandle<JSObject*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+102
+    PromiseDebugInfo::setResolutionInfo(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<js::SavedFrame*>)+442
+    ResolvePromise(JSContext*, JS::Handle<js::PromiseObject*>, JS::Handle<JS::Value>, JS::PromiseState, JS::Handle<js::SavedFrame*>)+179
+]: 38972
+@postBarrier[
+    js::InternalBarrierMethods<js::SavedFrame*, void>::postBarrier(js::SavedFrame**, js::SavedFrame*, js::SavedFrame*)+0
+    js::LiveSavedFrameCache::~LiveSavedFrameCache()+69
+    js::jit::MaybeEnterJit(JSContext*, js::RunState&)+712
+    js::RunScript(JSContext*, js::RunState&)+524
+    js::InternalCallOrConstruct(JSContext*, JS::CallArgs const&, js::MaybeConstruct, js::CallReason)+1199
+    js::Call(JSContext*, JS::Handle<JS::Value>, JS::Handle<JS::Value>, js::AnyInvokeArgs const&, JS::MutableHandle<JS::Value>, js::CallReason)+246
+    js::CallSelfHostedFunction(JSContext*, JS::Handle<js::PropertyName*>, JS::Handle<JS::Value>, js::AnyInvokeArgs const&, JS::MutableHandle<JS::Value>)+229
+]: 80878
+@postBarrier[
+    js::InternalBarrierMethods<js::SavedFrame*, void>::postBarrier(js::SavedFrame**, js::SavedFrame*, js::SavedFrame*)+0
+    mozilla::detail::VectorImpl<js::LiveSavedFrameCache::Entry, 0ul, js::SystemAllocPolicy, false>::growTo(mozilla::Vector<js::LiveSavedFrameCache::Entry, 0ul, js::SystemAllocPolicy>&, unsigned long)+173
+    js::LiveSavedFrameCache::insert(JSContext*, js::LiveSavedFrameCache::FramePtr&&, unsigned char const*, JS::Handle<js::SavedFrame*>)+54
+    js::SavedStacks::insertFrames(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+4203
+    js::SavedStacks::saveCurrentStack(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+122
+    JS::CaptureCurrentStack(JSContext*, JS::MutableHandle<JSObject*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+102
+    PromiseDebugInfo::create(JSContext*, JS::Handle<js::PromiseObject*>)+144
+]: 85945
+@postBarrier[
+    js::InternalBarrierMethods<js::SavedFrame*, void>::postBarrier(js::SavedFrame**, js::SavedFrame*, js::SavedFrame*)+0
+    mozilla::detail::VectorImpl<js::LiveSavedFrameCache::Entry, 0ul, js::SystemAllocPolicy, false>::growTo(mozilla::Vector<js::LiveSavedFrameCache::Entry, 0ul, js::SystemAllocPolicy>&, unsigned long)+190
+    js::LiveSavedFrameCache::insert(JSContext*, js::LiveSavedFrameCache::FramePtr&&, unsigned char const*, JS::Handle<js::SavedFrame*>)+54
+    js::SavedStacks::insertFrames(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+4203
+    js::SavedStacks::saveCurrentStack(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+122
+    JS::CaptureCurrentStack(JSContext*, JS::MutableHandle<JSObject*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+102
+    PromiseDebugInfo::create(JSContext*, JS::Handle<js::PromiseObject*>)+144
+]: 85945
+@postBarrier[
+    js::InternalBarrierMethods<js::SavedFrame*, void>::postBarrier(js::SavedFrame**, js::SavedFrame*, js::SavedFrame*)+0
+    mozilla::detail::VectorImpl<js::LiveSavedFrameCache::Entry, 0ul, js::SystemAllocPolicy, false>::growTo(mozilla::Vector<js::LiveSavedFrameCache::Entry, 0ul, js::SystemAllocPolicy>&, unsigned long)+277
+    js::LiveSavedFrameCache::insert(JSContext*, js::LiveSavedFrameCache::FramePtr&&, unsigned char const*, JS::Handle<js::SavedFrame*>)+54
+    js::SavedStacks::insertFrames(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+4203
+    js::SavedStacks::saveCurrentStack(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+122
+    JS::CaptureCurrentStack(JSContext*, JS::MutableHandle<JSObject*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+102
+    PromiseDebugInfo::create(JSContext*, JS::Handle<js::PromiseObject*>)+144
+]: 85945
+@postBarrier[
+    js::InternalBarrierMethods<JSAtom*, void>::postBarrier(JSAtom**, JSAtom*, JSAtom*)+0
+    js::SavedStacks::insertFrames(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+1781
+    js::SavedStacks::saveCurrentStack(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+122
+    JS::CaptureCurrentStack(JSContext*, JS::MutableHandle<JSObject*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+102
+    PromiseDebugInfo::create(JSContext*, JS::Handle<js::PromiseObject*>)+144
+    js::CreatePromiseObjectWithoutResolutionFunctions(JSContext*)+207
+    js::CreatePromiseObjectForAsync(JSContext*)+27
+]: 90615
+@postBarrier[
+    js::InternalBarrierMethods<JSAtom*, void>::postBarrier(JSAtom**, JSAtom*, JSAtom*)+0
+    js::SavedStacks::insertFrames(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+3288
+    js::SavedStacks::saveCurrentStack(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+122
+    JS::CaptureCurrentStack(JSContext*, JS::MutableHandle<JSObject*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+102
+    PromiseDebugInfo::create(JSContext*, JS::Handle<js::PromiseObject*>)+144
+    js::CreatePromiseObjectWithoutResolutionFunctions(JSContext*)+207
+    js::CreatePromiseObjectForAsync(JSContext*)+27
+]: 90615
+@postBarrier[
+    js::InternalBarrierMethods<JSScript*, void>::postBarrier(JSScript**, JSScript*, JSScript*)+0
+    js::SavedStacks::getLocation(JSContext*, js::FrameIter const&, JS::MutableHandle<js::SavedStacks::LocationValue>)+1134
+    js::SavedStacks::insertFrames(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+1887
+    js::SavedStacks::saveCurrentStack(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+122
+    JS::CaptureCurrentStack(JSContext*, JS::MutableHandle<JSObject*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+102
+    PromiseDebugInfo::create(JSContext*, JS::Handle<js::PromiseObject*>)+144
+    js::CreatePromiseObjectWithoutResolutionFunctions(JSContext*)+207
+]: 90618
+@postBarrier[
+    js::InternalBarrierMethods<js::SavedFrame*, void>::postBarrier(js::SavedFrame**, js::SavedFrame*, js::SavedFrame*)+0
+    js::LiveSavedFrameCache::insert(JSContext*, js::LiveSavedFrameCache::FramePtr&&, unsigned char const*, JS::Handle<js::SavedFrame*>)+136
+    js::SavedStacks::insertFrames(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+4203
+    js::SavedStacks::saveCurrentStack(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+122
+    JS::CaptureCurrentStack(JSContext*, JS::MutableHandle<JSObject*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+102
+    PromiseDebugInfo::create(JSContext*, JS::Handle<js::PromiseObject*>)+144
+    js::CreatePromiseObjectWithoutResolutionFunctions(JSContext*)+207
+]: 90620
+@postBarrier[
+    js::InternalBarrierMethods<JSScript*, void>::postBarrier(JSScript**, JSScript*, JSScript*)+0
+    js::SavedStacks::getLocation(JSContext*, js::FrameIter const&, JS::MutableHandle<js::SavedStacks::LocationValue>)+326
+    js::SavedStacks::insertFrames(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+1887
+    js::SavedStacks::saveCurrentStack(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+122
+    JS::CaptureCurrentStack(JSContext*, JS::MutableHandle<JSObject*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+102
+    PromiseDebugInfo::create(JSContext*, JS::Handle<js::PromiseObject*>)+144
+    js::CreatePromiseObjectWithoutResolutionFunctions(JSContext*)+207
+]: 90620
+@postBarrier[
+    js::InternalBarrierMethods<JSAtom*, void>::postBarrier(JSAtom**, JSAtom*, JSAtom*)+0
+    js::SavedStacks::getLocation(JSContext*, js::FrameIter const&, JS::MutableHandle<js::SavedStacks::LocationValue>)+1499
+    js::SavedStacks::insertFrames(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+1887
+    js::SavedStacks::saveCurrentStack(JSContext*, JS::MutableHandle<js::SavedFrame*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+122
+    JS::CaptureCurrentStack(JSContext*, JS::MutableHandle<JSObject*>, mozilla::Variant<JS::AllFrames, JS::MaxFrames, JS::FirstSubsumedFrame>&&, JS::Handle<JSObject*>)+102
+    PromiseDebugInfo::create(JSContext*, JS::Handle<js::PromiseObject*>)+144
+    js::CreatePromiseObjectWithoutResolutionFunctions(JSContext*)+207
+]: 90620
+=== END postBarrier ===
+=== BEGIN readBarrier ===
+
+=== END readBarrier ===
+Sleeping for 2 seconds...
+xxxpid=1468803
+
+
+
+
+
